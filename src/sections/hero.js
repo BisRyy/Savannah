@@ -1,19 +1,37 @@
 import styled from "@emotion/styled";
 import { Search } from "@mui/icons-material";
-import { Box, Button, Container, Input, TextField, Typography } from "@mui/material";
+import { Box, Button, Container, IconButton, Input, InputAdornment, OutlinedInput, TextField, Typography, alpha } from "@mui/material";
+import Chat from "./chat";
+import { useState } from "react";
 
 export default function Hero() {
-  const CustomBox = styled(Box)(({ theme }) => ({
-    display: "flex",
-    justifyContent: "center",
-    gap: theme.spacing(5),
-    paddingBottom: theme.spacing(3),
-    alignItems: "center",
-    flexDirection: "column",
-    // [theme.breakpoints.down("md")]: {
-    //   alignItems: "center",
-    //   textAlign: "center",
-    // },
+
+  const [open, setOpen] = useState(false);
+
+    const handleOpen = () => {
+      setOpen(true);
+    };
+
+    const handleClose = () => {
+      setOpen(false);
+    };
+
+  const StyledSearch = styled(OutlinedInput)(({ theme }) => ({
+    width: 500,
+    borderRadius: 80,
+    backgroundColor: theme.palette.background.paper,
+    transition: theme.transitions.create(["box-shadow", "width"], {
+      easing: theme.transitions.easing.easeInOut,
+      duration: theme.transitions.duration.shorter,
+    }),
+    "&.Mui-focused": {
+      width: 520,
+      boxShadow: theme.customShadows.z8,
+    },
+    "& fieldset": {
+      borderWidth: `1px !important`,
+      borderColor: `${alpha(theme.palette.grey[500], 0.32)} !important`,
+    },
   }));
 
   const Title = styled(Typography)(({ theme }) => ({
@@ -41,6 +59,7 @@ export default function Hero() {
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "center",
+          color: "white",
         }}
       >
         <img
@@ -76,35 +95,32 @@ export default function Hero() {
           certifications, and other relevant information for African university
           students.
         </Typography>
-        <Box sx={{ display: "flex", gap: 3, alignItems: "center" }}>
-          <Input
-            variant="filled"
-            width="100rem"
-            underline="none"
-            padding="10px"
-            hover="none"
-            placeholder="Search your major or dream career..."
-            size="large"
-            sx={{
-              borderRadius: 5,
-              backgroundColor: "white",
-            }}
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            gap: 3,
+            alignItems: "center",
+          }}
+        >
+          <StyledSearch
+            // value={filterName}
+            // onChange={onFilterName}
+            placeholder="Search for a career path"
             endAdornment={
-              <Box
-                sx={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                  width: 48,
-                  height: 48,
-                  borderRadius: 1,
-                  cursor: "pointer",
-                }}
-              >
-                <Search />
-              </Box>
+              <InputAdornment position="start">
+                <IconButton>
+                  <Search />
+                </IconButton>
+              </InputAdornment>
             }
           />
+          {" ------- or -------"}
+
+          <Button variant="contained" onClick={() => setOpen(true)}>
+            Ask Savannah
+          </Button>
+          <Chat open={open} handleOpen={handleOpen} handleClose={handleClose} />
         </Box>
       </Box>
     </>
