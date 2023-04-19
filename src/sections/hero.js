@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { Search } from "@mui/icons-material";
-import { Box, Button, Container, IconButton, Input, InputAdornment, OutlinedInput, TextField, Typography, alpha } from "@mui/material";
+import { Autocomplete, Box, Button, Container, IconButton, Input, InputAdornment, OutlinedInput, TextField, Typography, alpha } from "@mui/material";
 import Chat from "./chat";
 import { useState } from "react";
 
@@ -101,6 +101,7 @@ export default function Hero() {
             flexDirection: "column",
             gap: 3,
             alignItems: "center",
+            justifyContent: "center",
           }}
         >
           <StyledSearch
@@ -113,8 +114,8 @@ export default function Hero() {
                   <Search />
                 </IconButton>
               </InputAdornment>
-            }
-          />
+              }
+    />
           {" ------- or -------"}
 
           <Button variant="contained" onClick={() => setOpen(true)}>

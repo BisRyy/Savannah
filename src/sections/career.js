@@ -5,6 +5,7 @@ import {
   Button,
   Card,
   Container,
+  Grid,
   IconButton,
   Input,
   InputAdornment,
@@ -20,10 +21,11 @@ import CareerDetails from "./careerDetails";
 export default function Career({ data }) {
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState(null);
-  const [current, setCurrent] = useState(1);
+  const [current, setCurrent] = useState(0);
+  const [perPage, setPerPage] = useState(4);
 
   const handleLeft = () => {
-    if (current > 1) {
+    if (current > 0) {
       setCurrent(current - 1);
     }
   };
@@ -81,7 +83,7 @@ export default function Career({ data }) {
           alignItems: "center",
           // justifyContent: "center",
           // border: "2px solid red",
-          backgroundImage: `url(${data.image})`,
+          backgroundImage: `url(/images/Your_career_compass1.png)`,
           backgroundRepeat: "no-repeat",
           backgroundSize: "cover",
           backgroundPosition: "end",
@@ -121,9 +123,9 @@ export default function Career({ data }) {
         <Box
           sx={{
             display: "flex",
-            // justifyContent: "center",
+            justifyContent: "center",
             alignItems: "center",
-            // padding: 5,
+            padding: 5,
           }}
         >
           <IconButton sx={{ color: "white", position: 'absolute', left: 20 }} onClick={handleLeft}  >
@@ -137,39 +139,45 @@ export default function Career({ data }) {
               justifyContent: "center",
               flexWrap: "wrap",
               gap: 2,
-              padding: 4,
+              padding: 'auto',
+              maxWidth: "70%",
+              
             }}
           >
-            {console.log(current)}
-            {[0, 1, 2, 3].map((item) => (
+            { data.pages.slice(current*perPage, current*perPage + perPage).map((item, index) => (
+              <Grid item xs={12} sm={6} md={6} lg={6} key={index}>
               <Card
-                key={item}
-                onClick={() => {
-                  setSelected(item);
-                  handleOpen();
-                }}
-                sx={{
-                  "&:hover": {
-                    cursor: "pointer",
-                    backgroundColor: "rgba(0, 0, 0, 0.5)",
-                    color: "white",
-                    boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.75)",
-                    border: ".5px solid white",
-                    transition: "all 0.3s ease-in-out",
-                  },
-                  p: 2,
-                  mb: 4,
-                  width: "100%",
-                  maxWidth: 500,
-                }}
-              >
-                <Typography variant="h6" sx={{ mb: 1, fontWeight: "bold" }}>
-                  {data.pages[item * current].title}
-                </Typography>
-                <Typography variant="body2" sx={{ color: "text.secondary" }}>
-                  {data.pages[item * current].subtitle}
-                </Typography>
-              </Card>
+              
+              onClick={() => {
+                setSelected(index);
+                handleOpen();
+              }}
+              sx={{
+                "&:hover": {
+                  cursor: "pointer",
+                  backgroundColor: "rgba(0, 0, 0, 0.5)",
+                  color: "white",
+                  boxShadow: "0px 0px 10px 0px rgba(0,0,0,0.75)",
+                  border: ".5px solid white",
+                  transition: "all 0.3s ease-in-out",
+                },
+                p: 2,
+                mb: 4,
+                width: "100%",
+                height: "100%",
+                minWidth: { xs: 300, sm: 300, md: 350, lg: 400 },
+                maxWidth: { xs: 300, sm: 300, md: 350, lg: 400 },
+                
+              }}
+            >
+              <Typography variant="h6" sx={{ mb: 1, fontWeight: "bold" }}>
+                {item.title}
+              </Typography>
+              <Typography variant="body2" sx={{ color: "text.secondary" }}>
+                {item.subtitle}
+              </Typography>
+            </Card>
+            </Grid>
             ))}
           </Box>
           <IconButton sx={{ color: "white", position:'absolute', right:20 }} onClick={handleRight}>
