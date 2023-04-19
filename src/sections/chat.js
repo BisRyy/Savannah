@@ -47,7 +47,6 @@ export default function Chat({ open, handleOpen, handleClose }) {
     axios
       .post(url, data)
       .then((response) => {
-        console.log(response);
         setChatLog((prevChatLog) => [
           ...prevChatLog,
           { type: "bot", message: response.data.choices[0].message.content },
@@ -156,7 +155,6 @@ export default function Chat({ open, handleOpen, handleClose }) {
                 variant="contained"
                 color="primary"
                 onClick={handleSubmit}
-                loading={isLoading}
               >
                 Send
               </Button>
