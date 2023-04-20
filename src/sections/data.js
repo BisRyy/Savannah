@@ -2368,7 +2368,7 @@ const data = [
       },
       {
         title: "External Resources",
-        courses: [
+        content: [
           {
             provider: "Coursera",
             name: "Introduction to Psychology",
