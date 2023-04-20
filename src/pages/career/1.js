@@ -9,6 +9,7 @@ import {
   IconButton,
   Input,
   InputAdornment,
+  Link,
   OutlinedInput,
   TextField,
   Typography,
@@ -205,6 +206,22 @@ export default function Career() {
             </IconButton>
           )}
         </Box>
+        <Link href="/">
+          <Button
+            variant="contained"
+            sx={{
+              backgroundColor: "ff9d00",
+              color: "white",
+              fontWeight: "bold",
+              position: "relative",
+              bottom: 10,
+              right: 20,
+            }}
+          >
+            <ArrowBack />
+            Back to Home
+          </Button>
+        </Link>
       </Box>
 
       {open && (

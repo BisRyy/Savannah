@@ -18,6 +18,7 @@ import { useEffect, useState } from "react";
 import CareerDetails from "../../sections/careerDetails";
 import { useRouter } from "next/router";
 import bulkData from "../../sections/data";
+import Link from "next/link";
 
 export default function Career() {
   const router = useRouter();
@@ -211,6 +212,22 @@ export default function Career() {
             </IconButton>
           )}
         </Box>
+        <Link href="/">
+          <Button
+            variant="contained"
+            sx={{
+              backgroundColor: "ff9d00",
+              color: "white",
+              fontWeight: "bold",
+              position: "relative",
+              bottom: 10,
+              right: 20,
+            }}
+          >
+            <ArrowBack />
+            Back to Home
+          </Button>
+        </Link>
       </Box>
 
       {open && (

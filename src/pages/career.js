@@ -205,6 +205,7 @@ export default function Career() {
             </IconButton>
           )}
         </Box>
+      
       </Box>
 
       {open && (
