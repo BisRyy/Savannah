@@ -44,7 +44,7 @@ export default function SearchResult({ open, handleOpen, handleClose, data }) {
             }}
           >
             {data.map((item, index) => (
-              <Link href={`/career/${item.refIndex}`}>
+              <Link href={`/career/${item.refIndex}`} key={index}>
                 <Grid item xs={12} sm={10} md={5} lg={6} key={index}>
                   <Card
                     //   onClick={() => {
