@@ -1,10 +1,7 @@
-import Career from "@/sections/career";
-import Hero from "@/sections/hero";
-import data from '../sections/data';
+import Hero from "@/sectionsA/hero";
 import { Box, Button } from "@mui/material";
 
 export default function Home() {
-
   return (
     <>
       <Box
@@ -16,10 +13,10 @@ export default function Home() {
           right: "1rem",
         }}
       >
-        <Button variant="contained" href="/">
-          en
+        <Button href="/">en</Button>
+        <Button variant="contained" href="/am">
+          Am
         </Button>
-        <Button href="/am">Am</Button>
       </Box>
       <Hero />
     </>

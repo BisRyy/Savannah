@@ -1,4 +1,5 @@
 import ThemeProvider from "@/theme";
+import { Box, Button } from "@mui/material";
 import Link from "next/link";
 
 export default function App({ Component, pageProps }) {
