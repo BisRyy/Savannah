@@ -1,12 +1,25 @@
 import styled from "@emotion/styled";
-import { Search } from "@mui/icons-material";
+import { Search  } from "@mui/icons-material";
 import { Autocomplete, Box, Button, Container, IconButton, Input, InputAdornment, OutlinedInput, TextField, Typography, alpha } from "@mui/material";
 import Chat from "./chat";
 import { useState } from "react";
+import Fuse from "fuse.js";
+import data from "./data";
+import SearchResult from "./search";
+
 
 export default function Hero() {
 
   const [open, setOpen] = useState(false);
+  const [openSearch, setOpenSearch] = useState(false);
+
+  const handleOpenSearch = () => {
+    setOpenSearch(true);
+  };
+
+  const handleCloseSearch = () => {
+    setOpenSearch(false);
+  };
 
     const handleOpen = () => {
       setOpen(true);
@@ -17,7 +30,7 @@ export default function Hero() {
     };
 
   const StyledSearch = styled(OutlinedInput)(({ theme }) => ({
-    width: 500,
+    maxWidth: 500,
     borderRadius: 80,
     backgroundColor: theme.palette.background.paper,
     transition: theme.transitions.create(["box-shadow", "width"], {
@@ -25,7 +38,7 @@ export default function Hero() {
       duration: theme.transitions.duration.shorter,
     }),
     "&.Mui-focused": {
-      width: 520,
+      // maxWidth: 520,
       boxShadow: theme.customShadows.z8,
     },
     "& fieldset": {
@@ -43,6 +56,29 @@ export default function Hero() {
       fontSize: "20px",
     },
   }));
+
+  const options = {
+    includeScore: true,
+    keys: ['major', 'about' ],
+  };
+
+  const fuse = new Fuse(data, options);
+
+  const [value, setValue] = useState('');
+  const [result, setResult] = useState([]);
+  // Create a new instance of Fuse
+  const handleSearch = () => {
+    setResult(fuse.search(value));
+    console.log("result", result)
+    console.log("value", value)
+    if (result.length > 0) {
+      handleOpenSearch();
+    }
+    
+  }
+
+  // Now search for 'Man'
+
 
   return (
     <>
@@ -86,8 +122,9 @@ export default function Hero() {
             fontSize: "18px",
             color: "white",
             mb: 4,
-            width: { md: "50%", sm: "10%" },
+            px: 2,
             textAlign: "center",
+            width: {md:"60%", sm:"90%"}
           }}
         >
           A comprehensive online platform that provides easy access to career
@@ -105,12 +142,13 @@ export default function Hero() {
           }}
         >
           <StyledSearch
-            // value={filterName}
-            // onChange={onFilterName}
+            value={value}
+            onChange={(e) => setValue(e.target.value)}
+            autoFocus
             placeholder="Search for a career path"
             endAdornment={
               <InputAdornment position="start">
-                <IconButton>
+                <IconButton onClick={handleSearch}>
                   <Search />
                 </IconButton>
               </InputAdornment>
@@ -122,6 +160,7 @@ export default function Hero() {
             Ask Savannah
           </Button>
           <Chat open={open} handleOpen={handleOpen} handleClose={handleClose} />
+          <SearchResult open={openSearch} handleOpen={handleOpenSearch} handleClose={handleCloseSearch} data={result} />
         </Box>
       </Box>
     </>

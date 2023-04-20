@@ -14,11 +14,16 @@ import {
   Typography,
   alpha,
 } from "@mui/material";
-import Chat from "./chat";
 import { useState } from "react";
-import CareerDetails from "./careerDetails";
+import CareerDetails from "../sections/careerDetails";
+import { useRouter } from "next/router";
+import bulkData from "../sections/data";
 
-export default function Career({ data }) {
+export default function Career() {
+  const router = useRouter();
+  const query = router.query;
+  console.log("query", query);
+
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState(null);
   const [current, setCurrent] = useState(0);

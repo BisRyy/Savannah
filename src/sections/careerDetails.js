@@ -34,7 +34,7 @@ export default function CareerDetails({ open, handleOpen, handleClose, data }) {
               display: "flex",
               flexDirection: "row",
               alignItems: "center",
-              justifyContent: "center",
+              // justifyContent: "center",
               flexWrap: "wrap",
               gap: 2,
               // minHeight: "50vh",
@@ -44,7 +44,14 @@ export default function CareerDetails({ open, handleOpen, handleClose, data }) {
             }}
           >
             <Typography variant="p" sx={{ color: "primary" }}>
-              {data.content}
+              {
+              typeof data.content === "string" ? data.content : data.content.map((item, index) => (<>
+                <Typography variant="p" sx={{ color: "primary" }}>
+                  {item}
+                </Typography><br />
+                </>
+              ))
+              }
             </Typography>
           </Box>
         </DialogContent>
