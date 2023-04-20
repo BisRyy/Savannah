@@ -166,7 +166,7 @@ const data = [
 
       {
         title: "External Resources",
-        courses: [
+        content: [
           {
             provider: "Coursera",
             name: "Financial Accounting Fundamentals",
@@ -476,7 +476,7 @@ const data = [
       },
       {
         title: "External Resources",
-        courses: [
+        content: [
           {
             provider: "Coursera",
             name: "Introduction to Biomedical Engineering",
@@ -789,7 +789,7 @@ const data = [
 
       {
         title: "External Resources",
-        courses: [
+        content: [
           {
             provider: "Coursera",
             name: "Business Foundations Specialization",
@@ -1107,7 +1107,7 @@ const data = [
 
       {
         title: "External Resources",
-        courses: [
+        content: [
           {
             provider: "edX",
             name: "Introduction to Computer Science",
@@ -1427,7 +1427,7 @@ const data = [
 
       {
         title: "External Resources",
-        courses: [
+        content: [
           {
             provider: "MIT OpenCourseWare",
             name: "Introduction to Electrical Engineering",
@@ -1742,7 +1742,7 @@ const data = [
       },
       {
         title: "External Resources",
-        courses: [
+        content: [
           {
             provider: "Coursera",
             name: "Foundations of Management",
@@ -2055,7 +2055,7 @@ const data = [
       },
       {
         title: "External Resources",
-        courses: [
+        content: [
           {
             provider: "Coursera",
             name: "Introduction to Engineering Mechanics",
