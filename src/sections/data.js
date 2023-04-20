@@ -275,52 +275,6 @@ const bulkData = [
           "Biomedical Engineering is an interdisciplinary field that involves the application of engineering principles and methods to solve problems in biology and medicine. It encompasses a wide range of areas, including medical devices, imaging, biomaterials, biomechanics, and systems biology.",
       },
       {
-        title: "Theoretical Disciplines",
-        subtitle:
-          "What are the theoretical disciplines in Biomedical Engineering?",
-        content: [
-          "Biomaterials",
-          "Biomechanics",
-          "Bioinstrumentation",
-          "Biosensors",
-          "Bioinformatics",
-        ],
-      },
-      {
-        title: "Practical Disciplines",
-        subtitle:
-          "What are the practical disciplines in Biomedical Engineering?",
-        content: [
-          "Medical devices",
-          "Imaging",
-          "Rehabilitation engineering",
-          "Regenerative medicine",
-          "Healthcare systems",
-        ],
-      },
-      {
-        title: "Core Concepts",
-        subtitle: "What are the core concepts in Biomedical Engineering?",
-        content: [
-          "Physiology and anatomy",
-          "Biochemistry and molecular biology",
-          "Biomechanics and fluid mechanics",
-          "Electronics and instrumentation",
-          "Computer modeling and simulation",
-        ],
-      },
-      {
-        title: "Specializations",
-        subtitle: "What are the specializations in Biomedical Engineering?",
-        content: [
-          "Bioinformatics and computational biology",
-          "Neural engineering",
-          "Tissue engineering and regenerative medicine",
-          "Biomedical imaging",
-          "Medical device design and development",
-        ],
-      },
-      {
         title: "Universities and Colleges",
         subtitle:
           "Which universities and colleges in Africa offer Biomedical Engineering?",
@@ -330,38 +284,6 @@ const bulkData = [
           "Makerere University, Uganda",
           "University of the Witwatersrand, South Africa",
           "University of Nairobi, Kenya",
-        ],
-      },
-      {
-        title: "Double Majors and Easily Switchable Fields",
-        subtitle:
-          "What are other majors that align with Biomedical Engineering?",
-        content: [
-          "Biomedical Engineering and Biomedical Engineering",
-          "Biomedical Engineering and Computer Science",
-          "Biomedical Engineering and Materials Science and Engineering",
-        ],
-      },
-      {
-        title: "Master's Options",
-        subtitle:
-          "What master's degree can you pursue with Biomedical Engineering?",
-        content: [
-          "Master of Science in Biomedical Engineering",
-          "Master of Engineering in Biomedical Engineering",
-          "Master of Biomedical Engineering",
-        ],
-      },
-      {
-        title: "External Resources",
-        subtitle:
-          "What free external resources are there to study Biomedical Engineering?",
-        content: [
-          "National Institutes of Health: https://www.nih.gov/",
-          "National Science Foundation: https://www.nsf.gov/",
-          "International Federation for Medical and Biological Engineering: https://www.ifmbe.org/",
-          "Biomedical Engineering Society: https://www.bmes.org/",
-          "IEEE Engineering in Medicine and Biology Society: https://www.embs.org/",
         ],
       },
       {
@@ -379,7 +301,7 @@ const bulkData = [
       {
         title: "Internships",
         subtitle:
-          "What are the intership opportunities in Biomedical Engineering?",
+          "What are the internship opportunities in Biomedical Engineering?",
         content: [
           "African Society for Laboratory Medicine (ASLM) - https://www.aslm.org/opportunities/",
           "Association of African Universities (AAU) - https://aau.org/opportunities/",
@@ -398,6 +320,122 @@ const bulkData = [
           "Intuitive Surgical - https://www.intuitive.com/ - designs and manufactures robotic surgical systems",
           "Stryker - https://www.stryker.com/ - develops and manufactures medical devices and equipment",
           "Grail - https://grail.com/ - develops and manufactures innovative cancer diagnostics",
+        ],
+      },
+      {
+        title: "External Resources",
+        subtitle:
+          "What free external resources are there to study Biomedical Engineering?",
+        content: [
+          "National Institutes of Health: https://www.nih.gov/",
+          "National Science Foundation: https://www.nsf.gov/",
+          "International Federation for Medical and Biological Engineering: https://www.ifmbe.org/",
+          "Biomedical Engineering Society: https://www.bmes.org/",
+          "IEEE Engineering in Medicine and Biology Society: https://www.embs.org/",
+        ],
+      },
+      {
+        title: "Master's Options",
+        subtitle:
+          "What master's degree can you pursue with Biomedical Engineering?",
+        content: [
+          "Master of Science in Biomedical Engineering",
+          "Master of Engineering in Biomedical Engineering",
+          "Master of Biomedical Engineering",
+        ],
+      },
+      {
+        title: "Easily Switchable Fields",
+        subtitle:
+          "What are other majors that align with Biomedical Engineering?",
+        content: [
+          "Medicine",
+          "Computer Science",
+          "Electrical Engineering",
+          "Materials Science",
+        ],
+      },
+      {
+        title: "Extracurriculars",
+        subtitle:
+          "Exploring exciting extracurricular opportunities and clubs available in the field of Biomedical Engineering",
+        content: [
+          {
+            name: "Biomedical Engineering Society (BMES)",
+            description:
+              "BMES is a professional society for biomedical engineering students and professionals, providing opportunities for networking, professional development, and community building. Local chapters may offer guest speakers, field trips, and other events.",
+            website: "https://www.bmes.org/",
+          },
+          {
+            name: "Engineering World Health (EWH)",
+            description:
+              "EWH is a non-profit organization that focuses on improving healthcare in low-resource settings around the world through the development and implementation of medical technologies. EWH chapters at universities offer opportunities for students to participate in design projects, travel to developing countries, and learn about global health.",
+            website: "https://www.ewh.org/",
+          },
+          {
+            name: "Biomedical Engineering Society of South Africa (BESSA)",
+            description:
+              "BESSA is a professional society for biomedical engineering professionals and students in South Africa, providing opportunities for networking, continuing education, and advocacy. Local chapters may offer conferences, workshops, and other events.",
+            website: "https://www.bessa.org.za/",
+          },
+          {
+            name: "Society for Biological Engineering (SBE)",
+            description:
+              "SBE is a professional society for biological engineering professionals and students, including those in biomedical engineering, providing opportunities for networking, continuing education, and advocacy. Local chapters may offer guest speakers, workshops, and other events.",
+            website: "https://www.aiche.org/sbe",
+          },
+          {
+            name: "National Society of Black Engineers (NSBE)",
+            description:
+              "NSBE is a professional society for Black engineers, including those in biomedical engineering, providing opportunities for networking, professional development, and community building. Local chapters may offer guest speakers, mentoring programs, and other events.",
+            website: "https://www.nsbe.org/",
+          },
+        ],
+      },
+      {
+        title: "Experience Sharing",
+        subtitle:
+          "Exploring the wisdom of others' experiences to gain valuable insights",
+        content: "-----YOUTUBE VIDEO LINK------",
+      },
+      {
+        title: "Key Metrics",
+        subtitle: "Exploring essential metrics to gain meaningful insights.",
+        content: "-----Image------",
+      },
+      {
+        title: "FAQ",
+        subtitle: "Frequently Asked Questions about Biomedical Engineering",
+        content: [
+          {
+            question: "What is biomedical engineering?",
+            answer:
+              "Biomedical engineering is the application of engineering principles and design concepts to medicine and biology for healthcare purposes.",
+          },
+          {
+            question:
+              "What are some examples of biomedical engineering applications?",
+            answer:
+              "Some examples of biomedical engineering applications include developing prosthetics, designing medical imaging systems, and creating medical devices such as artificial organs.",
+          },
+          {
+            question:
+              "What kind of jobs are available in biomedical engineering?",
+            answer:
+              "There are many different jobs available in biomedical engineering, including biomedical engineer, medical device designer, biomaterials engineer, and clinical engineer.",
+          },
+          {
+            question:
+              "What kind of skills do I need to work in biomedical engineering?",
+            answer:
+              "To work in biomedical engineering, you need strong analytical, problem-solving, and communication skills, as well as knowledge of biology and medical principles.",
+          },
+          {
+            question:
+              "What are some top biomedical engineering companies in Africa?",
+            answer:
+              "Some top biomedical engineering companies in Africa include Philips Healthcare Africa, GE Healthcare Africa, Siemens Healthineers Africa, and Becton Dickinson Africa.",
+          },
         ],
       },
     ],
@@ -502,6 +540,182 @@ const bulkData = [
       },
     ],
     image: "/images/psychology.avif",
+  },
+  {
+    major: "Business",
+    about:
+      "Business is a broad field that encompasses a wide range of activities related to the production, sale, and exchange of goods and services. It includes the study and practice of finance, marketing, accounting, human resources, operations management, and entrepreneurship.",
+    pages: [
+      {
+        title: "Definition and Scope",
+        subtitle: "What is Business?",
+        content:
+          "Business is the activity of making, buying, or selling goods or providing services in exchange for money. It involves creating, managing, and growing organizations, as well as identifying and capitalizing on new opportunities.",
+      },
+      {
+        title: "Universities and Colleges",
+        subtitle:
+          "Which universities and colleges in Africa offer Business degrees?",
+        content: [
+          "University of Cape Town, South Africa",
+          "University of Pretoria, South Africa",
+          "University of Witwatersrand, South Africa",
+          "University of Nairobi, Kenya",
+          "University of Ghana, Ghana",
+        ],
+      },
+      {
+        title: "Career Opportunities",
+        subtitle: "What are the career opportunities in Business?",
+        content: [
+          "Management consultant",
+          "Investment banker",
+          "Marketing manager",
+          "Financial analyst",
+          "Human resources manager",
+          "Operations manager",
+        ],
+      },
+      {
+        title: "Internships",
+        subtitle: "What are the intership opportunities in Business?",
+        content: [
+          "Accounting Intern at PwC Africa: https://www.pwc.co.za/en/careers/student-careers/internship-programme.html",
+          "Marketing Intern at Unilever South Africa: https://www.unilever.co.za/careers/students-and-graduates/",
+          "Human Resources Intern at Standard Bank Group: https://www.standardbank.com/sbg/standard-bank-group/Careers/Programmes/Graduate-Programme",
+          "Operations Intern at DHL Africa: https://www.dpdhl.jobs/search-jobs/Student%20and%20Graduate%20Programmes/3527/1",
+          "Business Development Intern at Coca-Cola Beverages Africa: https://www.coca-colacompany.com/careers/career-opportunities/internship-opportunities",
+        ],
+      },
+      {
+        title: "Top Companies",
+        subtitle: "What top companies are there in the field of Business?",
+        content: [
+          "PwC Africa: https://www.pwc.co.za/",
+          "Unilever South Africa: https://www.unilever.co.za/",
+          "Standard Bank Group: https://www.standardbank.com/",
+          "DHL Africa: https://www.dpdhl.com/en/career/students-and-graduates.html",
+          "Coca-Cola Beverages Africa: https://www.coca-colacompany.com/",
+        ],
+      },
+      {
+        title: "External Resources",
+        subtitle: "What free external resources are there to study Business?",
+        content: [
+          "Harvard Business Review: https://hbr.org/",
+          "Wharton School of the University of Pennsylvania: https://knowledge.wharton.upenn.edu/",
+          "MIT Sloan Management Review: https://sloanreview.mit.edu/",
+          "Entrepreneur: https://www.entrepreneur.com/",
+          "Inc.: https://www.inc.com/",
+        ],
+      },
+      {
+        title: "Master's Options",
+        subtitle: "What master's degree can you pursue with a Business degree?",
+        content: [
+          "Master of Business Administration (MBA)",
+          "Master of Science in Accounting (MSA)",
+          "Master of Science in Finance (MSF)",
+          "Master of Human Resource Management (MHRM)",
+          "Master of Marketing (MM)",
+        ],
+      },
+
+      {
+        title: "Easily Switchable Fields",
+        subtitle: "What other majors can align with Business?",
+        content: [
+          "Marketing",
+          "Finance",
+          "Accounting",
+          "Human resources",
+          "Operations management",
+          "Entrepreneurship",
+          "International business",
+        ],
+      },
+      {
+        title: "Experience Sharing",
+        subtitle:
+          "Exploring the wisdom of others' experiences to gain valuable insights",
+        content: "-----YOUTUBE VIDEO LINK------",
+      },
+      {
+        title: "Key Metrics",
+        subtitle: "Exploring essential metrics to gain meaningful insights.",
+        content: "-----Image------",
+      },
+      {
+        title: "Extracurriculars",
+        subtitle:
+          "Exploring exciting extracurricular opportunities and clubs available in the field of Business",
+        content: [
+          {
+            name: "DECA",
+            description:
+              "DECA is a non-profit organization that prepares emerging leaders and entrepreneurs in marketing, finance, hospitality and management. DECA chapters at universities offer opportunities for students to participate in case competitions, leadership conferences, and community service projects.",
+            website: "https://www.deca.org/",
+          },
+          {
+            name: "Future Business Leaders of America (FBLA)",
+            description:
+              "FBLA is a non-profit organization that helps high school students prepare for careers in business and business-related fields. FBLA chapters at universities offer opportunities for students to develop leadership skills, participate in competitive events, and network with business professionals.",
+            website: "https://www.fbla-pbl.org/",
+          },
+          {
+            name: "National Association of Black Accountants (NABA)",
+            description:
+              "NABA is a non-profit organization that promotes the professional and academic advancement of African Americans in accounting, finance, and related business fields. NABA chapters at universities offer opportunities for networking, professional development, and community service.",
+            website: "https://www.nabainc.org/",
+          },
+          {
+            name: "Enactus",
+            description:
+              "Enactus is an international non-profit organization that brings together student, academic, and business leaders to create positive social change through entrepreneurial action. Enactus teams at universities work on projects that use business concepts to address social, environmental, and economic issues.",
+            website: "https://www.enactus.org/",
+          },
+          {
+            name: "Alpha Kappa Psi",
+            description:
+              "Alpha Kappa Psi is a professional co-ed business fraternity that develops principled business leaders. AKPsi chapters at universities offer opportunities for networking, professional development, and community service.",
+            website: "https://akpsi.org/",
+          },
+        ],
+      },
+
+      {
+        title: "FAQ",
+        subtitle: "Frequently Asked Questions about Business",
+        content: [
+          {
+            question: "What is Business?",
+            answer:
+              "Business is the activity of making one's living or making money by producing or buying and selling products (such as goods and services). It encompasses all the activities that are involved in the production and exchange of goods and services.",
+          },
+          {
+            question: "What are the different types of Business?",
+            answer:
+              "There are several types of businesses, including sole proprietorship, partnership, corporation, limited liability company (LLC), and cooperative.",
+          },
+          {
+            question: "What kind of jobs are available in Business?",
+            answer:
+              "There are many different jobs available in Business, including accountant, financial analyst, marketing manager, human resources manager, and operations manager.",
+          },
+          {
+            question: "What kind of skills do I need to work in Business?",
+            answer:
+              "To work in Business, you need strong analytical, communication, and problem-solving skills, as well as a good understanding of business principles, marketing strategies, and financial statements.",
+          },
+          {
+            question: "What are some top companies in Africa?",
+            answer:
+              "Some top companies in Africa include MTN Group, Dangote Group, Safaricom, Standard Bank Group, and Shoprite Holdings.",
+          },
+        ],
+      },
+    ],
+    image: "/images/ee.avif",
   },
 ];
 
