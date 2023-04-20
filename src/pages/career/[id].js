@@ -15,15 +15,15 @@ import {
   alpha,
 } from "@mui/material";
 import { useState } from "react";
-import CareerDetails from "../sections/careerDetails";
+import CareerDetails from "../../sections/careerDetails";
 import { useRouter } from "next/router";
-import bulkData from "../sections/data";
+import bulkData from "../../sections/data";
 
 export default function Career() {
   const router = useRouter();
   const { id } = router.query;
   const data = bulkData[id];
-  console.log("query", query);
+  console.log("query", data);
 
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState(null);
