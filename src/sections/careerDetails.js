@@ -50,7 +50,8 @@ export default function CareerDetails({ open, handleOpen, handleClose, data }) {
           >
             <Typography variant="p" sx={{ color: "primary" }}>
               {typeof data.content === "string" &&
-              data.title !== "Experience Sharing" ? (
+              data.title !== "Experience Sharing" &&
+              data.title !== "Key Metrics" ? (
                 data.content
               ) : data.title === "FAQ" ? (
                 data.content.map((item, index) => (
@@ -84,6 +85,11 @@ export default function CareerDetails({ open, handleOpen, handleClose, data }) {
                     <br />
                   </>
                 ))
+              ) : data.title === "Key Metrics" ? (
+                <img
+                  src="/images/Savannah_Your_career_compass_-_Pitch_2023.png"
+                  alt="Key Metrics"
+                />
               ) : data.title === "Experience Sharing" ? (
                 <iframe
                   width="560"
