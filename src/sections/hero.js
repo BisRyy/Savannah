@@ -1,15 +1,25 @@
 import styled from "@emotion/styled";
-import { Search  } from "@mui/icons-material";
-import { Autocomplete, Box, Button, Container, IconButton, Input, InputAdornment, OutlinedInput, TextField, Typography, alpha } from "@mui/material";
+import { Search } from "@mui/icons-material";
+import {
+  Autocomplete,
+  Box,
+  Button,
+  Container,
+  IconButton,
+  Input,
+  InputAdornment,
+  OutlinedInput,
+  TextField,
+  Typography,
+  alpha,
+} from "@mui/material";
 import Chat from "./chat";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import Fuse from "fuse.js";
 import data from "./data";
 import SearchResult from "./search";
 
-
 export default function Hero() {
-
   const [open, setOpen] = useState(false);
   const [openSearch, setOpenSearch] = useState(false);
 
@@ -21,13 +31,13 @@ export default function Hero() {
     setOpenSearch(false);
   };
 
-    const handleOpen = () => {
-      setOpen(true);
-    };
+  const handleOpen = () => {
+    setOpen(true);
+  };
 
-    const handleClose = () => {
-      setOpen(false);
-    };
+  const handleClose = () => {
+    setOpen(false);
+  };
 
   const StyledSearch = styled(OutlinedInput)(({ theme }) => ({
     maxWidth: 500,
@@ -59,26 +69,28 @@ export default function Hero() {
 
   const options = {
     includeScore: true,
-    keys: ['major', 'about' ],
+    keys: ["major", "about"],
   };
 
   const fuse = new Fuse(data, options);
-
-  const [value, setValue] = useState('');
+  const [value, setValue] = useState("");
   const [result, setResult] = useState([]);
+
+  useEffect(() => {
+    setResult(fuse.search(value));
+  }, [value]);
+
   // Create a new instance of Fuse
   const handleSearch = () => {
     setResult(fuse.search(value));
-    console.log("result", result)
-    console.log("value", value)
+    console.log("result", result);
+    console.log("value", value);
     if (result.length > 0) {
       handleOpenSearch();
     }
-    
-  }
+  };
 
   // Now search for 'Man'
-
 
   return (
     <>
@@ -124,7 +136,7 @@ export default function Hero() {
             mb: 4,
             px: 2,
             textAlign: "center",
-            width: {md:"60%", sm:"90%"}
+            width: { md: "60%", sm: "90%" },
           }}
         >
           A comprehensive online platform that provides easy access to career
@@ -152,15 +164,20 @@ export default function Hero() {
                   <Search />
                 </IconButton>
               </InputAdornment>
-              }
-    />
+            }
+          />
           {" ------- or -------"}
 
           <Button variant="contained" onClick={() => setOpen(true)}>
             Ask Savannah
           </Button>
           <Chat open={open} handleOpen={handleOpen} handleClose={handleClose} />
-          <SearchResult open={openSearch} handleOpen={handleOpenSearch} handleClose={handleCloseSearch} data={result} />
+          <SearchResult
+            open={openSearch}
+            handleOpen={handleOpenSearch}
+            handleClose={handleCloseSearch}
+            data={result}
+          />
         </Box>
       </Box>
     </>

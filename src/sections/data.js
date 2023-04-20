@@ -322,6 +322,106 @@ const bulkData = [
     ],
     image: "/images/ee.avif",
   },
+  {
+    major: "Psychology",
+    about:
+      "Psychology is the scientific study of behavior and mental processes. It encompasses a wide range of topics, from perception and cognition to personality and social behavior. Psychologists use a variety of research methods to study these topics, including experiments, surveys, and case studies.",
+    pages: [
+      {
+        title: "Introduction",
+        subtitle: "What is Psychology?",
+        content:
+          "Psychology is the scientific study of behavior and mental processes. It encompasses a wide range of topics, from perception and cognition to personality and social behavior.",
+      },
+      {
+        title: "Theoretical Approaches",
+        subtitle: "What are the theoretical approaches in Psychology?",
+        content:
+          "There are several theoretical approaches in Psychology, including biological, psychodynamic, behavioral, cognitive, and humanistic approaches. Each approach provides a unique perspective on human behavior and mental processes.",
+      },
+      {
+        title: "Research Methods",
+        subtitle: "What are the research methods used in Psychology?",
+        content:
+          "Psychologists use a variety of research methods to study behavior and mental processes, including experiments, surveys, and case studies. Each method has its strengths and weaknesses and is suited to different research questions.",
+      },
+      {
+        title: "Specializations",
+        subtitle: "What are the specializations in Psychology?",
+        content: [
+          "Clinical Psychology",
+          "Counseling Psychology",
+          "Developmental Psychology",
+          "Social Psychology",
+          "Cognitive Psychology",
+        ],
+      },
+      {
+        title: "Universities and Colleges",
+        subtitle: "Which universities and colleges in Africa offer Psychology?",
+        content: [
+          "University of Cape Town, South Africa",
+          "University of the Witwatersrand, South Africa",
+          "University of Ghana, Ghana",
+          "University of Lagos, Nigeria",
+          "University of Nairobi, Kenya",
+        ],
+      },
+      {
+        title: "Master's Options",
+        subtitle: "What master's degree can you pursue with Psychology?",
+        content: [
+          "Master of Science in Psychology (MSc)",
+          "Master of Arts in Psychology (MA)",
+          "Master of Counseling Psychology (MCP)",
+        ],
+      },
+      {
+        title: "External Resources",
+        subtitle: "What free external resources are there to study Psychology?",
+        content: [
+          "American Psychological Association: https://www.apa.org/",
+          "Psychology Today: https://www.psychologytoday.com/intl",
+          "Association for Psychological Science: https://www.psychologicalscience.org/",
+          "British Psychological Society: https://www.bps.org.uk/",
+        ],
+      },
+      {
+        title: "Career Opportunities",
+        subtitle: "What are the career opportunities in Psychology?",
+        content: [
+          "Clinical Psychologist",
+          "Counseling Psychologist",
+          "Developmental Psychologist",
+          "Social Psychologist",
+          "Educational Psychologist",
+        ],
+      },
+      {
+        title: "Internships",
+        subtitle: "What are the internship opportunities in Psychology?",
+        content: [
+          "Clinical Psychologist",
+          "Counseling Psychologist",
+          "Developmental Psychologist",
+          "Social Psychologist",
+          "Educational Psychologist",
+        ],
+      },
+      {
+        title: "Top Companies",
+        subtitle: "What top companies are there in the field of Psychology?",
+        content: [
+          "Psytech International: https://psytech.co.za/",
+          "Africawide Consulting: https://www.africawideconsulting.com/",
+          "Impact Consulting: https://impactconsulting.co.za/",
+          "LifeAssist: https://www.lifeassist.co.za/",
+          "SADAG: https://www.sadag.org/",
+        ],
+      },
+    ],
+    image: "/images/psychology.avif",
+  },
 ];
 
 export default bulkData;

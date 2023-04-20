@@ -15,9 +15,9 @@ import {
   alpha,
 } from "@mui/material";
 import { useState } from "react";
-import CareerDetails from "../sections/careerDetails";
+import CareerDetails from "../../sections/careerDetails";
 import { useRouter } from "next/router";
-import bulkData from "../sections/data";
+import bulkData from "../../sections/data";
 
 export default function Career() {
   const router = useRouter();

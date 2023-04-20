@@ -14,7 +14,7 @@ import {
   Typography,
   alpha,
 } from "@mui/material";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import CareerDetails from "../../sections/careerDetails";
 import { useRouter } from "next/router";
 import bulkData from "../../sections/data";
@@ -22,8 +22,17 @@ import bulkData from "../../sections/data";
 export default function Career() {
   const router = useRouter();
   const { id } = router.query;
-  const data = bulkData[id];
-  console.log("query", data);
+  const [data, setData] = useState(bulkData[0]);
+
+  useEffect(() => {
+    if (id === 3)
+      setData(bulkData[id]);
+  }, [id]);
+  // id && setData(bulkData[id]);
+
+  // console.log("query", bulkData);
+  // console.log("data", data);
+  console.log("id", id);
 
   const [open, setOpen] = useState(false);
   const [selected, setSelected] = useState(null);
