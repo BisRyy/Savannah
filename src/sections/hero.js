@@ -167,11 +167,11 @@ export default function Hero() {
             onChange={(e) => setValue(e.target.value)}
             onKeyPress={(event) => {
               if (event.key === "Enter") {
-               handleSearch();
+                handleSearch();
               }
             }}
             autoFocus
-            placeholder="Search for a career path"
+            placeholder="Search your major..."
             endAdornment={
               <InputAdornment position="start">
                 <IconButton onClick={handleSearch}>
