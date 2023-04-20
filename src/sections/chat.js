@@ -16,7 +16,9 @@ import {
 
 export default function Chat({ open, handleOpen, handleClose }) {
   const [inputValue, setInputValue] = useState("");
-  const [chatLog, setChatLog] = useState([]);
+  const [chatLog, setChatLog] = useState([
+    { type: "bot", message: "Hi, I'm Savannah. I can help you with career choice. Tell me about your interest and skills." },
+  ]);
   const [isLoading, setIsLoading] = useState(false);
 
   const handleSubmit = (event) => {
@@ -29,7 +31,9 @@ export default function Chat({ open, handleOpen, handleClose }) {
       { type: "user", message: inputValue },
     ]);
 
-    sendMessage(inputValue);
+    sendMessage(
+      ` What are some career options that align with my interests and skills? I'm looking for advice on paths I could pursue to make a meaningful impact and feel fulfilled in my work. ${inputValue}`
+    );
 
     setInputValue("");
   };
@@ -40,6 +44,11 @@ export default function Chat({ open, handleOpen, handleClose }) {
     const data = {
       model: "gpt-3.5-turbo-0301",
       messages: [{ role: "user", content: message }],
+      max_tokens: 100,
+      temperature: 0.5,
+      top_p: 1,
+      presence_penalty: 0.5,
+      frequency_penalty: 0.5,
     };
 
     setIsLoading(true);
@@ -91,7 +100,7 @@ export default function Chat({ open, handleOpen, handleClose }) {
               p: 2,
             }}
           >
-            {chatLog.length === 0 && (
+            {chatLog.length === 1 && (
               <>
                 <Typography variant="h3">
                   Start a conversation with Savannah

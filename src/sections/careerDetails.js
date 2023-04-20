@@ -1,5 +1,8 @@
 import { useState } from "react";
 import {
+  Accordion,
+  AccordionDetails,
+  AccordionSummary,
   Box,
   Button,
   Card,
@@ -13,6 +16,7 @@ import {
   TextField,
   Typography,
 } from "@mui/material";
+import ExpandMoreIcon from "@mui/icons-material/ExpandMore";
 
 export default function CareerDetails({ open, handleOpen, handleClose, data }) {
   return (
@@ -25,7 +29,7 @@ export default function CareerDetails({ open, handleOpen, handleClose, data }) {
             justifyContent: "space-between",
           }}
         >
-          <Typography variant="h4">{ data.title }</Typography>
+          <Typography variant="h4">{data.title}</Typography>
           <Button onClick={handleClose}>Close</Button>
         </DialogTitle>
         <DialogContent>
@@ -38,20 +42,48 @@ export default function CareerDetails({ open, handleOpen, handleClose, data }) {
               flexWrap: "wrap",
               gap: 2,
               // minHeight: "50vh",
-              // maxWidth: "60%", 
+              // maxWidth: "60%",
               backgroundColor: "#F5F5F5",
               p: 2,
             }}
           >
             <Typography variant="p" sx={{ color: "primary" }}>
-              {
-              typeof data.content === "string" ? data.content : data.content.map((item, index) => (<>
-                <Typography variant="p" sx={{ color: "primary" }}>
-                  {item}
-                </Typography><br />
-                </>
-              ))
-              }
+              {typeof data.content === "string"
+                ? data.content
+                : data.title === "FAQ"
+                ? data.content.map((item, index) => (
+                    <>
+                      <Accordion>
+                        <AccordionSummary
+                          expandIcon={<ExpandMoreIcon />}
+                          aria-controls="panel1a-content"
+                          id="panel1a-header"
+                        >
+                          <Typography>
+                            {item.question}
+                          </Typography>
+                        </AccordionSummary>
+                        <AccordionDetails>
+                          <Typography>
+                            {item.answer}
+                          </Typography>
+                        </AccordionDetails>
+                      </Accordion>
+                    </>
+                  ))
+                // : 
+                // : data.title === "Experience Sharing"
+                // ?  
+                // <iframe
+                :
+                data.content.map((item, index) => (
+                    <>
+                      <Typography variant="p" sx={{ color: "primary" }}>
+                        {item}
+                      </Typography>
+                      <br />
+                    </>
+                  ))}
             </Typography>
           </Box>
         </DialogContent>

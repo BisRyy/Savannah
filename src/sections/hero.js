@@ -168,7 +168,15 @@ export default function Hero() {
           />
           {" ------- or -------"}
 
-          <Button variant="contained" onClick={() => setOpen(true)}>
+          <Button
+            variant="contained"
+            onClick={() => setOpen(true)}
+            sx={{
+              backgroundColor: "ff9d00",
+              color: "white",
+              fontWeight: "bold",
+            }}
+          >
             Ask Savannah
           </Button>
           <Chat open={open} handleOpen={handleOpen} handleClose={handleClose} />

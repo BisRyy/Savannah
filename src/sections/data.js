@@ -109,50 +109,6 @@ const bulkData = [
           "Accounting is a field that involves recording, classifying, and summarizing financial transactions to provide useful information for decision-making. It encompasses a range of activities, including financial reporting, auditing, and tax planning.",
       },
       {
-        title: "Theoretical Disciplines",
-        subtitle: "What are the theoretical disciplines in Accounting?",
-        content: [
-          "Financial Accounting",
-          "Managerial Accounting",
-          "Auditing",
-          "Taxation",
-          "Accounting Information Systems",
-        ],
-      },
-      {
-        title: "Practical Disciplines",
-        subtitle: "What are the practical disciplines in Accounting?",
-        content: [
-          "Financial Reporting",
-          "Cost Accounting",
-          "Internal Auditing",
-          "Tax Accounting",
-          "Forensic Accounting",
-        ],
-      },
-      {
-        title: "Core Concepts",
-        subtitle: "What are the core concepts in Accounting?",
-        content: [
-          "Double-entry bookkeeping",
-          "Debits and credits",
-          "Financial statements",
-          "Internal controls",
-          "Budgeting and forecasting",
-        ],
-      },
-      {
-        title: "Specializations",
-        subtitle: "What are the specializations in Accounting?",
-        content: [
-          "Auditing and Assurance Services",
-          "Taxation",
-          "Financial Reporting",
-          "Management Accounting",
-          "Forensic Accounting",
-        ],
-      },
-      {
         title: "Universities and Colleges",
         subtitle: "Which universities and colleges in Africa offer Accounting?",
         content: [
@@ -161,6 +117,46 @@ const bulkData = [
           "University of Witwatersrand, South Africa",
           "University of Nairobi, Kenya",
           "University of Ghana, Ghana",
+        ],
+      },
+      {
+        title: "Career Opportunities",
+        subtitle: "What are the career opportunities in Accounting?",
+        content: [
+          "Public Accountant: Provide accounting services to clients, including tax preparation, financial statement preparation, and consulting.",
+          "Internal Auditor: Review and evaluate a company's internal controls, financial records, and operating procedures to ensure compliance with laws and regulations.",
+          "Financial Analyst: Analyze financial data to make investment recommendations, evaluate the financial performance of companies, and create financial models.",
+          "Tax Accountant: Prepare and file tax returns for individuals and businesses, and provide tax planning advice.",
+          "Forensic Accountant: Investigate financial fraud, embezzlement, and other white-collar crimes.",
+          "Management Accountant: Prepare financial reports and provide financial analysis to help management make informed business decisions.",
+          "Budget Analyst: Develop and manage organizational budgets, monitor spending, and provide recommendations for cost savings and revenue enhancement.",
+        ],
+      },
+      {
+        title: "Internships",
+        subtitle: "What are the internship opportunities in Accounting?",
+        content: [
+          "Deloitte: https://www2.deloitte.com/za/en/careers/students/internships.html",
+          "PwC: https://www.pwc.co.za/en/careers/studentcareers/internships.html",
+          "KPMG: https://home.kpmg/za/en/home/careers/students-and-graduates.html",
+          "EY: https://www.ey.com/en_za/careers/students/programs",
+          "Grant Thornton: https://www.grantthornton.co.za/en/careers/student-opportunities/",
+        ],
+      },
+      {
+        title: "Top Companies",
+        subtitle: "What top companies are there in the field of Accounting?",
+        content: ["KPMG", "PwC", "Deloitte", "EY", "Grant Thornton"],
+      },
+      {
+        title: "External Resources",
+        subtitle: "What free external resources are there to study Accounting?",
+        content: [
+          "Khan Academy: https://www.khanacademy.org/economics-finance-domain/core-finance/accounting-and-financial-statements",
+          "Accounting Coach: https://www.accountingcoach.com/",
+          "Investopedia: https://www.investopedia.com/terms/a/accounting.asp",
+          "Open Textbook Library: https://open.umn.edu/opentextbooks/textbooks/principles-of-accounting-volume-1-financial-accounting",
+          "MIT OpenCourseWare: https://ocw.mit.edu/courses/sloan-school-of-management/15-515-financial-and-managerial-accounting-spring-2004/",
         ],
       },
       {
@@ -175,12 +171,72 @@ const bulkData = [
         ],
       },
       {
-        title: "Top Companies",
-        subtitle: "What top companies are there in the field of Accounting?",
-        content: ["KPMG", "PwC", "Deloitte", "EY", "Grant Thornton"],
+        title: "Easily Switchable Fields",
+        subtitle: "What other majors can align with Accounting?",
+        content: [
+          "Finance",
+          "Economics",
+          "Information Systems",
+          "Business Analytics",
+          "Mathematics",
+        ],
+      },
+      {
+        title: "Extracurriculars",
+        subtitle:
+          "Exploring exciting extracurricular opportunities and clubs available in the field of accounting",
+        content: [
+          "Beta Alpha Psi: Beta Alpha Psi is an international honor society and professional organization for accounting, finance, and information systems students. Members gain access to career resources, networking events, and leadership development programs.",
+          "Accounting Club: Many universities have an accounting club that provides opportunities for students to connect with professionals, learn about accounting career paths, and gain hands-on experience through community service projects.",
+          "Volunteer Income Tax Assistance (VITA): VITA is a program sponsored by the IRS that offers free tax help to low- to moderate-income individuals and families. Accounting students can volunteer to prepare tax returns and gain practical experience while giving back to their community.",
+          "Financial Planning Association (FPA): FPA is a professional organization for financial planners that offers networking opportunities and educational resources. Accounting students interested in financial planning can benefit from membership and attend events to learn about the industry.",
+          "Institute of Management Accountants (IMA): IMA is a professional organization for management accountants that offers certification programs, conferences, and publications. Accounting students interested in management accounting can join IMA and gain access to these resources.",
+        ],
+      },
+      {
+        title: "Experience Sharing",
+        subtitle:
+          "Exploring the wisdom of others' experiences to gain valuable insights",
+        content: "-----YOUTUBE VIDEO LINK------",
+      },
+      {
+        title: "Key Metrics",
+        subtitle: "Exploring essential metrics to gain meaningful insights.",
+        content: "-----Image------",
+      },
+      {
+        title: "FAQ",
+        subtitle: "Frequently Asked Questions about Accounting",
+        content: [
+          {
+            question: "What is accounting?",
+            answer:
+              "Accounting is the process of recording, classifying, and summarizing financial transactions to provide information that is useful in making business decisions.",
+          },
+          {
+            question: "What are the different types of accounting?",
+            answer:
+              "There are several types of accounting, including financial accounting, management accounting, tax accounting, and forensic accounting.",
+          },
+          {
+            question: "What kind of jobs are available in accounting?",
+            answer:
+              "There are many different jobs available in accounting, including accountant, auditor, bookkeeper, financial analyst, and tax preparer.",
+          },
+          {
+            question: "What kind of skills do I need to work in accounting?",
+            answer:
+              "To work in accounting, you need strong analytical, communication, and computer skills, as well as a good understanding of financial statements and accounting principles.",
+          },
+          {
+            question: "What are some top accounting firms in Africa?",
+            answer:
+              "Some top accounting firms in Africa include Deloitte, PwC, KPMG, and EY.",
+          },
+        ],
       },
     ],
-    image: "/images/accounting.avif",
+    image: "/images/ee.avif",
   },
   {
     major: "Biomedical Engineering",
