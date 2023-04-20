@@ -49,49 +49,71 @@ export default function CareerDetails({ open, handleOpen, handleClose, data }) {
             }}
           >
             <Typography variant="p" sx={{ color: "primary" }}>
-              {typeof data.content === "string"
-                ? data.content
-                : data.title === "FAQ"
-                ? data.content.map((item, index) => (
-                    <>
-                      <Accordion>
-                        <AccordionSummary
-                          expandIcon={<ExpandMoreIcon />}
-                          aria-controls="panel1a-content"
-                          id="panel1a-header"
-                        >
-                          <Typography>{item.question}</Typography>
-                        </AccordionSummary>
-                        <AccordionDetails>
-                          <Typography>{item.answer}</Typography>
-                        </AccordionDetails>
-                      </Accordion>
-                    </>
-                  ))
-                : data.title === "Extracurriculars"
-                ? data.content.map((item, index) => (
-                    <>
-                      <Typography variant="h6" sx={{ color: "primary" }}>
-                        {item.name}
-                      </Typography>
-                      <Typography variant="p" sx={{ color: "primary" }}>
-                        {item.description}
-                      </Typography>
-                      {"  "}
-                      <Link href={item.website}>Website</Link>
-                      <br />
-                      <br />
-                    </>
-                  ))
-                : data.content.map((item, index) => (
-                    <>
-                      <Typography variant="p" sx={{ color: "primary" }}>
-                        {item}
-                      </Typography>
-                      <br />
-                      <br />
-                    </>
-                  ))}
+              {typeof data.content === "string" &&
+              data.title !== "Experience Sharing" &&
+              data.title !== "Key Metrics" ? (
+                data.content
+              ) : data.title === "FAQ" ? (
+                data.content.map((item, index) => (
+                  <>
+                    <Accordion>
+                      <AccordionSummary
+                        expandIcon={<ExpandMoreIcon />}
+                        aria-controls="panel1a-content"
+                        id="panel1a-header"
+                      >
+                        <Typography>{item.question}</Typography>
+                      </AccordionSummary>
+                      <AccordionDetails>
+                        <Typography>{item.answer}</Typography>
+                      </AccordionDetails>
+                    </Accordion>
+                  </>
+                ))
+              ) : data.title === "Extracurriculars" ||
+                data.title === "Internships" ||
+                data.title === "Career Opportunities" ? (
+                data.content.map((item, index) => (
+                  <>
+                    <Typography variant="h6" sx={{ color: "primary" }}>
+                      {item.name}
+                    </Typography>
+                    <Typography variant="p" sx={{ color: "primary" }}>
+                      {item.description}
+                    </Typography>
+                    {"  "}
+                    {item.website && <Link href={item.website}>Website</Link>}
+                    <br />
+                    <br />
+                  </>
+                ))
+              ) : data.title === "Key Metrics" ? (
+                <img
+                  src="/images/Savannah_Your_career_compass_-_Pitch_2023.png"
+                  alt="Key Metrics"
+                />
+              ) : data.title === "Experience Sharing" ? (
+                <iframe
+                  width="560"
+                  height="315"
+                  src="https://www.youtube.com/embed/hbhhCbVJxHc"
+                  title="YouTube video player"
+                  frameborder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowfullscreen
+                  self="center"
+                />
+              ) : (
+                data.content.map((item, index) => (
+                  <>
+                    <Typography variant="p" sx={{ color: "primary" }}>
+                      {item}
+                    </Typography>
+                    <br />
+                    <br />
+                  </>
+                ))
+              )}
             </Typography>
           </Box>
         </DialogContent>

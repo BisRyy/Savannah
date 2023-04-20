@@ -1255,6 +1255,7 @@ const data = [
     ],
     image: "/images/ee.avif",
   },
+
   {
     major: "Electrical Engineering",
     about:
@@ -1577,6 +1578,940 @@ const data = [
       },
     ],
     image: "/images/ee.avif",
+  },
+
+  {
+    major: "Management",
+    about:
+      "Management is a field that involves planning, organizing, coordinating, and controlling resources to achieve organizational objectives. It covers a wide range of activities, including finance, marketing, operations, human resources, and strategic management.",
+    pages: [
+      {
+        title: "Definition and Scope",
+        subtitle: "What is Management?",
+        content:
+          "Management involves overseeing and coordinating the activities of an organization to achieve its goals. It includes planning, organizing, leading, and controlling resources, including personnel, finances, and operations.",
+      },
+
+      {
+        title: "Universities and Colleges",
+        subtitle: "Which universities and colleges in Africa offer Management?",
+        content: [
+          {
+            name: "University of Cape Town",
+            description:
+              "The University of Cape Town offers a Bachelor of Business Science degree with specializations in Management Studies and Organizational Psychology, as well as a Master of Commerce in Management Studies. The Faculty of Commerce is highly ranked in Africa and is accredited by the Association to Advance Collegiate Schools of Business (AACSB).",
+            website: "https://www.commerce.uct.ac.za/",
+          },
+          {
+            name: "Strathmore University",
+            description:
+              "Strathmore University in Nairobi, Kenya, offers a Bachelor of Commerce degree with a concentration in Management, as well as a Master of Business Administration with a concentration in Strategic Management. The Strathmore Business School is accredited by the Association to Advance Collegiate Schools of Business (AACSB) and the Association of MBAs (AMBA).",
+            website: "https://sbs.strathmore.edu/",
+          },
+          {
+            name: "University of the Witwatersrand",
+            description:
+              "The University of the Witwatersrand in Johannesburg, South Africa, offers a Bachelor of Commerce degree with a specialization in Management, as well as a Master of Commerce in Management. The Wits Business School is highly ranked in Africa and is accredited by the Association to Advance Collegiate Schools of Business (AACSB).",
+            website: "https://www.wits.ac.za/wbs/",
+          },
+          {
+            name: "American University in Cairo",
+            description:
+              "The School of Business at the American University in Cairo offers a Bachelor of Business Administration with a concentration in Management, as well as a Master of Business Administration with a specialization in Strategic Management. The school is accredited by the Association to Advance Collegiate Schools of Business (AACSB) and the European Foundation for Management Development (EFMD).",
+            website: "https://www.aucegypt.edu/academics/schools/business",
+          },
+          {
+            name: "University of Lagos",
+            description:
+              "The Faculty of Business Administration at the University of Lagos in Nigeria offers a Bachelor of Science in Business Administration with a concentration in Management, as well as a Master of Business Administration with a concentration in Strategic Management. The faculty is accredited by the Association to Advance Collegiate Schools of Business (AACSB).",
+            website:
+              "https://www.unilag.edu.ng/faculties/faculty-of-business-administration/",
+          },
+        ],
+      },
+
+      {
+        title: "Career Opportunities",
+        subtitle: "What are the potential careers in Management?",
+        content: [
+          {
+            name: "Management Consultant",
+            description:
+              "Management consultants work with organizations to improve their performance and efficiency. They analyze organizational problems, develop solutions, and help implement changes to improve the organization's operations.",
+          },
+          {
+            name: "Human Resources Manager",
+            description:
+              "Human resources managers are responsible for recruiting, hiring, and managing employees. They also oversee employee benefits and handle employee relations issues, such as disputes or complaints.",
+          },
+          {
+            name: "Financial Manager",
+            description:
+              "Financial managers are responsible for the financial health of an organization. They develop financial reports, manage investments, and create and implement financial strategies to help the organization achieve its goals.",
+          },
+          {
+            name: "Marketing Manager",
+            description:
+              "Marketing managers are responsible for creating and implementing marketing strategies to promote an organization's products or services. They analyze market trends and develop campaigns to reach target audiences.",
+          },
+          {
+            name: "Operations Manager",
+            description:
+              "Operations managers oversee the day-to-day operations of an organization. They are responsible for ensuring that the organization is running efficiently and effectively, and for developing and implementing operational policies and procedures.",
+          },
+        ],
+      },
+      {
+        title: "Internships",
+        subtitle:
+          "Exploring internship opportunities available in the field of Management",
+        content: [
+          {
+            name: "Deloitte",
+            description:
+              "Deloitte offers internships in various areas of Management, including Consulting, Risk Advisory, and Financial Advisory. Interns gain hands-on experience, work with clients, and have access to training and mentorship opportunities.",
+            website: "https://www2.deloitte.com/",
+          },
+          {
+            name: "PwC",
+            description:
+              "PwC offers internships in various areas of Management, including Assurance, Consulting, and Tax. Interns gain experience working on projects, interacting with clients, and participating in professional development sessions.",
+            website: "https://www.pwc.com/",
+          },
+          {
+            name: "KPMG",
+            description:
+              "KPMG offers internships in various areas of Management, including Audit, Tax, and Advisory. Interns gain exposure to different aspects of the business, work on client projects, and participate in training and development programs.",
+            website: "https://home.kpmg/",
+          },
+          {
+            name: "Ernst & Young (EY)",
+            description:
+              "EY offers internships in various areas of Management, including Assurance, Advisory, and Tax. Interns have the opportunity to work on client projects, develop skills through training and mentorship, and explore different areas of the business.",
+            website: "https://www.ey.com/",
+          },
+          {
+            name: "Goldman Sachs",
+            description:
+              "Goldman Sachs offers internships in various areas of Management, including Investment Banking, Securities, and Asset Management. Interns work on real projects, develop skills through training and mentorship, and gain exposure to different areas of the business.",
+            website: "https://www.goldmansachs.com/",
+          },
+        ],
+      },
+      {
+        title: "Top Companies",
+        subtitle:
+          "Leading management consulting and advisory firms operating in Africa.",
+        content: [
+          {
+            name: "McKinsey & Company",
+            description:
+              "McKinsey & Company is a global management consulting firm that serves leading businesses, governments, non-governmental organizations, and not-for-profits. The firm's African offices are located in South Africa, Kenya, Nigeria, and Morocco.",
+            location: "South Africa, Kenya, Nigeria, Morocco",
+            website: "https://www.mckinsey.com/",
+          },
+          {
+            name: "Boston Consulting Group",
+            description:
+              "The Boston Consulting Group is a global management consulting firm that serves leading businesses, governments, and non-governmental organizations. The firm's African offices are located in South Africa, Nigeria, and Kenya.",
+            location: "South Africa, Nigeria, Kenya",
+            website: "https://www.bcg.com/",
+          },
+          {
+            name: "Bain & Company",
+            description:
+              "Bain & Company is a global management consulting firm that serves leading businesses, governments, and non-governmental organizations. The firm's African offices are located in South Africa, Nigeria, and Kenya.",
+            location: "South Africa, Nigeria, Kenya",
+            website: "https://www.bain.com/",
+          },
+          {
+            name: "PwC",
+            description:
+              "PwC is a global professional services network that provides audit, advisory, and tax services to businesses and governments. The firm's African offices are located in over 30 countries across the continent.",
+            location: "Various African countries",
+            website: "https://www.pwc.com/",
+          },
+          {
+            name: "EY",
+            description:
+              "EY is a global professional services network that provides audit, tax, consulting, and advisory services to businesses and governments. The firm's African offices are located in over 20 countries across the continent.",
+            location: "Various African countries",
+            website: "https://www.ey.com/",
+          },
+        ],
+      },
+      {
+        title: "External Resources",
+        courses: [
+          {
+            provider: "Coursera",
+            name: "Foundations of Management",
+            description:
+              "This course provides an overview of key concepts and theories in management, including organizational structure, leadership, and decision-making.",
+            website: "https://www.coursera.org/learn/foundations-of-management",
+          },
+          {
+            provider: "edX",
+            name: "Management Essentials",
+            description:
+              "This course covers the fundamentals of management, including leadership, decision-making, and communication.",
+            website: "https://www.edx.org/course/management-essentials",
+          },
+          {
+            provider: "Harvard Business School Online",
+            name: "Management Essentials",
+            description:
+              "This course covers the fundamental concepts of management, including leadership, strategy, and decision-making. Students will also learn how to analyze financial statements and use data to inform their decisions.",
+            website: "https://online.hbs.edu/courses/management-essentials/",
+          },
+          {
+            provider: "MIT OpenCourseWare",
+            name: "Introduction to Management",
+            description:
+              "This course provides an overview of management, including topics such as organizational structure, human resources, and strategy. Students will also learn about decision-making and problem-solving in a managerial context.",
+            website:
+              "https://ocw.mit.edu/courses/sloan-school-of-management/15-301-introduction-to-management-fall-2004/",
+          },
+          {
+            provider: "Khan Academy",
+            name: "Entrepreneurship",
+            description:
+              "Khan Academy's Entrepreneurship section includes resources on starting and managing a business, including topics such as business plans, marketing, and finance.",
+            website:
+              "https://www.khanacademy.org/economics-finance-domain/entrepreneurship2",
+          },
+        ],
+      },
+      {
+        title: "Master's Options",
+        subtitle: "What master's degree can you pursue with Management?",
+        content: [
+          "Master of Business Administration (MBA)",
+          "Master of Science in Management (MSM)",
+          "Master of Management (MM)",
+        ],
+      },
+      {
+        title: "Easily Switchable Fields",
+        subtitle: "What other majors can align with Management?",
+        content: [
+          "Marketing",
+          "Finance",
+          "Accounting",
+          "Human Resources",
+          "Entrepreneurship",
+          "International Business",
+          "Operations Management",
+        ],
+      },
+      {
+        title: "Extracurriculars",
+        subtitle:
+          "Exploring exciting extracurricular opportunities and clubs available in the field of Management",
+        content: [
+          {
+            name: "National Society of Leadership and Success (NSLS)",
+            description:
+              "NSLS is an organization that focuses on developing leadership skills and providing career opportunities for college students. Members have access to events, workshops, and mentorship programs.",
+            website: "https://www.nsls.org/",
+          },
+          {
+            name: "Future Business Leaders of America-Phi Beta Lambda (FBLA-PBL)",
+            description:
+              "FBLA-PBL is a national organization that prepares students for careers in business and management. Members have access to networking events, leadership training, and competitions.",
+            website: "https://www.fbla-pbl.org/",
+          },
+          {
+            name: "Society for Human Resource Management (SHRM)",
+            description:
+              "SHRM is a professional society for human resource management professionals and students, providing opportunities for networking, continuing education, and advocacy. Local chapters may offer guest speakers, workshops, and other events.",
+            website: "https://www.shrm.org/",
+          },
+          {
+            name: "National Association of Black Accountants (NABA)",
+            description:
+              "NABA is a professional society for Black accountants and business professionals, providing opportunities for networking, professional development, and community building. Local chapters may offer guest speakers, mentoring programs, and other events.",
+            website: "https://www.nabainc.org/",
+          },
+          {
+            name: "Delta Sigma Pi (DSP)",
+            description:
+              "DSP is a professional fraternity that prepares students for careers in business and management. Members have access to networking events, professional development, and leadership training.",
+            website: "https://www.dsp.org/",
+          },
+        ],
+      },
+      {
+        title: "Experience Sharing",
+        subtitle:
+          "Exploring the wisdom of others' experiences to gain valuable insights",
+        content: "-----YOUTUBE VIDEO LINK------",
+      },
+      {
+        title: "Key Metrics",
+        subtitle: "Exploring essential metrics to gain meaningful insights.",
+        content: "-----Image------",
+      },
+      {
+        title: "FAQ",
+        subtitle: "Frequently Asked Questions about Management",
+        content: [
+          {
+            question: "What is management?",
+            answer:
+              "Management is the process of planning, organizing, leading, and controlling resources (people, finances, materials) to achieve organizational goals.",
+          },
+          {
+            question: "What are the different types of management?",
+            answer:
+              "There are several types of management, including strategic management, operations management, project management, human resource management, and financial management.",
+          },
+          {
+            question: "What kind of jobs are available in management?",
+            answer:
+              "There are many different jobs available in management, including general manager, operations manager, project manager, human resource manager, and financial manager.",
+          },
+          {
+            question: "What kind of skills do I need to work in management?",
+            answer:
+              "To work in management, you need strong leadership, communication, problem-solving, and decision-making skills, as well as a good understanding of business principles and practices.",
+          },
+          {
+            question:
+              "What are some top management consulting firms in Africa?",
+            answer:
+              "Some top management consulting firms in Africa include McKinsey & Company, Boston Consulting Group, Bain & Company, and Deloitte.",
+          },
+        ],
+      },
+    ],
+    image: "/images/management.avif",
+  },
+
+  {
+    major: "Mechanical Engineering",
+    about:
+      "Mechanical Engineering is a field of engineering that applies principles of physics, material science and mathematics to design, develop, test, and maintain mechanical systems. Mechanical engineers work on anything from small components, such as microsensors, to large systems, such as aircraft engines and power plants.",
+    pages: [
+      {
+        title: "Definition and Scope",
+        subtitle: "What is Mechanical Engineering?",
+        content:
+          "Mechanical Engineering is the study, design, development, and maintenance of mechanical systems, including machines, engines, and tools. This field of engineering involves applying principles of physics, material science, and mathematics to create innovative solutions for real-world problems.",
+      },
+
+      {
+        title: "Universities and Colleges",
+        subtitle:
+          "Which universities and colleges in Africa offer Mechanical Engineering?",
+        content: [
+          {
+            name: "University of Cape Town",
+            description:
+              "The University of Cape Town's Department of Mechanical Engineering offers undergraduate and postgraduate degrees in mechanical engineering, as well as research opportunities in a variety of fields such as energy, manufacturing, robotics, and design.",
+            website: "http://www.mecheng.uct.ac.za/",
+          },
+          {
+            name: "University of Pretoria",
+            description:
+              "The University of Pretoria's Department of Mechanical and Aeronautical Engineering offers undergraduate and postgraduate degrees in mechanical engineering, as well as research opportunities in a variety of fields such as thermodynamics, fluid mechanics, and materials science.",
+            website:
+              "https://www.up.ac.za/mechanical-and-aeronautical-engineering",
+          },
+          {
+            name: "Cairo University",
+            description:
+              "Cairo University's Department of Mechanical Engineering offers undergraduate and postgraduate degrees in mechanical engineering, with a focus on design, production, and materials science.",
+            website: "http://www.eng.cu.edu.eg/en/mechanical",
+          },
+          {
+            name: "University of Lagos",
+            description:
+              "The University of Lagos' Department of Mechanical Engineering offers undergraduate and postgraduate degrees in mechanical engineering, as well as research opportunities in a variety of fields such as renewable energy, automotive engineering, and mechatronics.",
+            website: "https://engineering.unilag.edu.ng/mechanical/",
+          },
+          {
+            name: "University of the Witwatersrand",
+            description:
+              "The University of the Witwatersrand's School of Mechanical, Industrial and Aeronautical Engineering offers undergraduate and postgraduate degrees in mechanical engineering, as well as research opportunities in a variety of fields such as robotics, biomechanics, and materials science.",
+            website: "https://www.wits.ac.za/smie/",
+          },
+        ],
+      },
+      {
+        title: "Career Opportunities",
+        subtitle: "What are the potential careers in Mechanical Engineering?",
+        content: [
+          {
+            name: "Mechanical Engineer",
+            description:
+              "Mechanical engineers design, develop, and test mechanical devices, including tools, engines, and machines.",
+          },
+          {
+            name: "Automotive Engineer",
+            description:
+              "Automotive engineers design and develop new cars, trucks, and other vehicles, as well as improvements to existing vehicles.",
+          },
+          {
+            name: "Robotics Engineer",
+            description:
+              "Robotics engineers design and develop robots and other automated systems that can perform tasks traditionally done by humans.",
+          },
+          {
+            name: "Materials Engineer",
+            description:
+              "Materials engineers research, develop, and test materials for use in a variety of applications, including manufacturing and construction.",
+          },
+          {
+            name: "Energy Engineer",
+            description:
+              "Energy engineers design and develop energy systems and equipment, including renewable energy sources such as wind and solar power.",
+          },
+        ],
+      },
+      {
+        title: "Internships",
+        subtitle:
+          "Explore internship opportunities in Mechanical Engineering in Africa.",
+        content: [
+          {
+            name: "GE Africa Internship Program",
+            description:
+              "GE Africa's internship program offers opportunities for students to gain hands-on experience in mechanical engineering, along with mentorship and networking opportunities. Interns may work on projects related to energy, aviation, or healthcare.",
+            website: "https://www.ge.com/africa/careers/internship-programs",
+          },
+          {
+            name: "Lafarge Africa Internship Program",
+            description:
+              "Lafarge Africa's internship program offers opportunities for students to gain experience in mechanical engineering within the construction industry. Interns may work on projects related to plant operations, maintenance, or quality control.",
+            website: "https://www.lafarge.com.ng/careers/internship-program",
+          },
+          {
+            name: "Baker Hughes Internship Program",
+            description:
+              "Baker Hughes' internship program offers opportunities for students to gain experience in mechanical engineering, working on projects related to oil and gas, renewable energy, or digital solutions. Interns may have the opportunity to work with global teams and participate in training and development programs.",
+            website:
+              "https://www.bakerhughes.com/careers/students-and-recent-graduates/internships",
+          },
+          {
+            name: "Volvo Group Africa Internship Program",
+            description:
+              "Volvo Group Africa's internship program offers opportunities for students to gain experience in mechanical engineering within the transportation industry. Interns may work on projects related to vehicle design, production, or testing.",
+            website:
+              "https://www.volvogroup.com/en-en/careers/students-and-graduates/internship.html",
+          },
+          {
+            name: "AECOM Africa Internship Program",
+            description:
+              "AECOM Africa's internship program offers opportunities for students to gain experience in mechanical engineering within the construction and engineering consulting industries. Interns may work on projects related to infrastructure, buildings, or water resources.",
+            website: "https://africa.aecom.com/careers/students/",
+          },
+        ],
+      },
+      {
+        title: "Top Companies",
+        subtitle:
+          "Leading companies in the mechanical engineering industry operating in Africa.",
+        content: [
+          {
+            name: "Babcock International",
+            description:
+              "Babcock International is a UK-based company with a strong presence in Africa. They provide engineering services across multiple sectors, including energy, mining, and transportation.",
+            location: "South Africa, Zambia, Tanzania, Botswana, Uganda",
+            website: "https://www.babcockinternational.com/",
+          },
+          {
+            name: "Fluor Corporation",
+            description:
+              "Fluor Corporation is a multinational engineering and construction firm that provides engineering, procurement, construction, maintenance, and project management services to clients across the globe.",
+            location: "South Africa, Morocco, Algeria, Egypt",
+            website: "https://www.fluor.com/",
+          },
+          {
+            name: "Hatch",
+            description:
+              "Hatch is a global engineering consultancy that provides services to multiple industries, including mining, energy, and infrastructure. They have a strong presence in Africa, with offices in multiple countries across the continent.",
+            location:
+              "South Africa, Tanzania, Mozambique, Zambia, Botswana, Namibia, Algeria, Egypt",
+            website: "https://www.hatch.com/",
+          },
+          {
+            name: "Mott MacDonald",
+            description:
+              "Mott MacDonald is a global engineering consultancy that provides services across multiple sectors, including transportation, energy, and water. They have a strong presence in Africa, with offices in multiple countries across the continent.",
+            location:
+              "South Africa, Egypt, Morocco, Tanzania, Uganda, Zambia, Botswana, Ghana, Kenya, Nigeria",
+            website: "https://www.mottmac.com/",
+          },
+          {
+            name: "WorleyParsons",
+            description:
+              "WorleyParsons is a global engineering firm that provides engineering and project delivery services across multiple sectors, including energy, chemicals, and infrastructure. They have a strong presence in Africa, with offices in multiple countries across the continent.",
+            location:
+              "South Africa, Morocco, Algeria, Tunisia, Mozambique, Angola",
+            website: "https://www.worleyparsons.com/",
+          },
+        ],
+      },
+      {
+        title: "External Resources",
+        courses: [
+          {
+            provider: "Coursera",
+            name: "Introduction to Engineering Mechanics",
+            description:
+              "This course provides an introduction to engineering mechanics, including statics, dynamics, and mechanics of materials. Topics covered include forces, moments, trusses, and shear and moment diagrams.",
+            website:
+              "https://www.coursera.org/learn/engineering-mechanics-statics",
+          },
+          {
+            provider: "edX",
+            name: "Mechanics of Materials I: Fundamentals of Stress and Strain and Axial Loading",
+            description:
+              "This course covers the fundamental principles of mechanics of materials, including stress and strain, axial loading, and deformation. Students will also learn about topics such as thermal stress and pressure vessels.",
+            website:
+              "https://www.edx.org/course/mechanics-of-materials-i-fundamentals-of-stress-and-strain-and-axial-loading",
+          },
+          {
+            provider: "MIT OpenCourseWare",
+            name: "Introduction to Mechanical Engineering Design",
+            description:
+              "This course provides an introduction to mechanical engineering design, including the design process, materials selection, and basic machine elements such as gears, bearings, and springs. Students will also work on a design project throughout the course.",
+            website:
+              "https://ocw.mit.edu/courses/mechanical-engineering/2-007-design-and-manufacturing-i-spring-2009/index.htm",
+          },
+          {
+            provider: "Khan Academy",
+            name: "Physics",
+            description:
+              "Khan Academy's Physics section includes a wide range of resources related to mechanical engineering, including videos and articles on topics such as mechanics, thermodynamics, and waves. ",
+            website: "https://www.khanacademy.org/science/physics",
+          },
+          {
+            provider: "Stanford Online",
+            name: "Machine Learning for Engineers",
+            description:
+              "This course provides an introduction to machine learning, including supervised and unsupervised learning, linear regression, and neural networks. Students will also learn about applications of machine learning in mechanical engineering.",
+            website:
+              "https://online.stanford.edu/courses/soe-ymle-machine-learning-engineers",
+          },
+        ],
+      },
+      {
+        title: "Master's Options",
+        subtitle:
+          "What master's degree can you pursue with Mechanical Engineering?",
+        content: [
+          "Master of Science in Mechanical Engineering (MSME)",
+          "Master of Engineering in Mechanical Engineering (MEng ME)",
+          "Master of Technology in Mechanical Engineering (M Tech ME)",
+        ],
+      },
+      {
+        title: "Easily Switchable Fields",
+        subtitle: "What other majors can align with Mechanical Engineering?",
+        content: [
+          "Aerospace Engineering",
+          "Civil Engineering",
+          "Electrical Engineering",
+          "Industrial Engineering",
+          "Manufacturing Engineering",
+          "Materials Science and Engineering",
+          "Mechatronics Engineering",
+        ],
+      },
+      {
+        title: "Extracurriculars",
+        subtitle:
+          "Exploring exciting extracurricular opportunities and clubs available in the field of Mechanical Engineering",
+        content: [
+          {
+            name: "American Society of Mechanical Engineers (ASME)",
+            description:
+              "ASME is a professional society for mechanical engineering students and professionals, providing opportunities for networking, professional development, and community building. Local chapters may offer guest speakers, field trips, and other events.",
+            website: "https://www.asme.org/",
+          },
+          {
+            name: "Society of Women Engineers (SWE)",
+            description:
+              "SWE is a professional society for women in engineering, including those in mechanical engineering, providing opportunities for networking, professional development, and community building. Local chapters may offer mentoring programs, guest speakers, and other events.",
+            website: "https://swe.org/",
+          },
+          {
+            name: "Tau Beta Pi",
+            description:
+              "Tau Beta Pi is an engineering honor society that recognizes academic achievement and provides opportunities for leadership, service, and professional development. Mechanical engineering students who meet eligibility requirements may be invited to join their university's chapter.",
+            website: "https://tbp.org/",
+          },
+          {
+            name: "Society of Hispanic Professional Engineers (SHPE)",
+            description:
+              "SHPE is a professional society for Hispanic engineers, including those in mechanical engineering, providing opportunities for networking, professional development, and community building. Local chapters may offer mentoring programs, guest speakers, and other events.",
+            website: "https://www.shpe.org/",
+          },
+          {
+            name: "National Society of Black Engineers (NSBE)",
+            description:
+              "NSBE is a professional society for Black engineers, including those in mechanical engineering, providing opportunities for networking, professional development, and community building. Local chapters may offer guest speakers, mentoring programs, and other events.",
+            website: "https://www.nsbe.org/",
+          },
+        ],
+      },
+
+      {
+        title: "Experience Sharing",
+        subtitle:
+          "Exploring the wisdom of others' experiences to gain valuable insights",
+        content: "-----YOUTUBE VIDEO LINK------",
+      },
+      {
+        title: "Key Metrics",
+        subtitle: "Exploring essential metrics to gain meaningful insights.",
+        content: "-----Image------",
+      },
+      {
+        title: "FAQ",
+        subtitle: "Frequently Asked Questions about Mechanical Engineering",
+        content: [
+          {
+            question: "What is mechanical engineering?",
+            answer:
+              "Mechanical engineering is the branch of engineering that focuses on the design, analysis, and manufacturing of mechanical systems and devices.",
+          },
+          {
+            question:
+              "What are some examples of mechanical systems and devices?",
+            answer:
+              "Examples of mechanical systems and devices include engines, turbines, robots, HVAC systems, and manufacturing equipment.",
+          },
+          {
+            question:
+              "What kind of jobs are available in mechanical engineering?",
+            answer:
+              "There are many different jobs available in mechanical engineering, including design engineer, project engineer, research and development engineer, manufacturing engineer, and quality engineer.",
+          },
+          {
+            question:
+              "What kind of skills do I need to work in mechanical engineering?",
+            answer:
+              "To work in mechanical engineering, you need strong analytical, problem-solving, and communication skills, as well as a good understanding of mathematics, physics, and mechanics.",
+          },
+          {
+            question:
+              "What are some top companies in the field of mechanical engineering?",
+            answer:
+              "Some top companies in the field of mechanical engineering include General Electric, Siemens, Caterpillar, Boeing, and Ford.",
+          },
+        ],
+      },
+    ],
+    image: "/images/ee.avif",
+  },
+
+  {
+    major: "Psychology",
+    about:
+      "Psychology is the scientific study of behavior and mental processes. It encompasses a wide range of topics, from perception and cognition to personality and social behavior. Psychologists use a variety of research methods to study these topics, including experiments, surveys, and case studies.",
+    pages: [
+      {
+        title: "Definition and Scope",
+        subtitle: "What is Psychology?",
+        content:
+          "Psychology is the scientific study of behavior and mental processes. It encompasses a wide range of topics, from perception and cognition to personality and social behavior.",
+      },
+
+      {
+        title: "Universities and Colleges",
+        subtitle: "Which universities and colleges in Africa offer Psychology?",
+        content: [
+          {
+            name: "University of Cape Town",
+            description:
+              "The Department of Psychology at the University of Cape Town offers undergraduate and postgraduate programs in Psychology. Areas of specialization include Clinical, Cognitive Neuroscience, Developmental, Health, Social and Positive Psychology.",
+            website: "https://www.psychology.uct.ac.za/",
+          },
+          {
+            name: "University of Ghana",
+            description:
+              "The Department of Psychology at the University of Ghana offers undergraduate and postgraduate programs in Psychology. Areas of specialization include Clinical, Developmental, Social, Cognitive, and Organizational Psychology.",
+            website: "https://www.ug.edu.gh/psychology",
+          },
+          {
+            name: "University of Lagos",
+            description:
+              "The Department of Psychology at the University of Lagos offers undergraduate and postgraduate programs in Psychology. Areas of specialization include Clinical, Social, and Developmental Psychology.",
+            website: "https://unilag.edu.ng/department-of-psychology/",
+          },
+          {
+            name: "University of Nairobi",
+            description:
+              "The Department of Psychology at the University of Nairobi offers undergraduate and postgraduate programs in Psychology. Areas of specialization include Clinical, Counseling, Educational, Social, and Industrial Psychology.",
+            website: "https://psychology.uonbi.ac.ke/",
+          },
+          {
+            name: "University of Pretoria",
+            description:
+              "The Department of Psychology at the University of Pretoria offers undergraduate and postgraduate programs in Psychology. Areas of specialization include Clinical, Counselling, Educational, Organizational, and Research Psychology.",
+            website: "https://www.up.ac.za/psychology",
+          },
+        ],
+      },
+      {
+        title: "Career Opportunities",
+        subtitle: "What are the potential careers in Psychology?",
+        content: [
+          {
+            name: "Clinical Psychologist",
+            description:
+              "Clinical psychologists assess and treat mental, emotional, and behavioral disorders. They work with individuals, couples, families, and groups to help them overcome a wide range of psychological problems.",
+          },
+          {
+            name: "Counseling Psychologist",
+            description:
+              "Counseling psychologists help people improve their overall well-being by addressing emotional, social, vocational, and developmental issues. They work with individuals, families, and groups to help them cope with life's challenges.",
+          },
+          {
+            name: "School Psychologist",
+            description:
+              "School psychologists work with students, teachers, and parents to help students succeed academically, socially, and emotionally. They provide counseling, assessment, and intervention services to help students overcome learning and behavioral challenges.",
+          },
+          {
+            name: "Industrial-Organizational Psychologist",
+            description:
+              "Industrial-organizational psychologists apply psychological principles and theories to the workplace to improve productivity, morale, and quality of work life. They may help organizations with hiring, training, performance evaluation, and other human resources issues.",
+          },
+          {
+            name: "Forensic Psychologist",
+            description:
+              "Forensic psychologists apply their knowledge of psychology to legal issues, including criminal and civil court cases. They may conduct evaluations of criminal defendants, work with child custody cases, or provide consultation services to law enforcement agencies.",
+          },
+        ],
+      },
+      {
+        title: "Internships",
+        subtitle:
+          "Opportunities for psychology students to gain real-world experience",
+        content: [
+          {
+            name: "APA Minority Fellowship Program",
+            description:
+              "The APA Minority Fellowship Program provides fellowships to graduate students pursuing a doctoral degree in psychology. The program aims to increase the number of ethnic minority psychologists and provide support to students in their doctoral training.",
+            website: "https://www.apa.org/pi/mfp",
+          },
+          {
+            name: "American Psychological Association Internship Program",
+            description:
+              "The American Psychological Association (APA) Internship Program is a pre-doctoral psychology internship program. It provides graduate students in psychology with training and experience in clinical and health services psychology.",
+            website: "https://www.apa.org/apags/education-training/internships",
+          },
+          {
+            name: "Psychology Internship Center (PIC)",
+            description:
+              "The Psychology Internship Center (PIC) is a comprehensive resource for students seeking internships in psychology. It offers a searchable database of internships, as well as advice and guidance on applying for internships.",
+            website: "https://www.psychologyinternshipcenter.com/",
+          },
+          {
+            name: "Association of Psychology Postdoctoral and Internship Centers (APPIC)",
+            description:
+              "APPIC is a membership organization for psychology training programs. Its website provides a directory of member internship programs, as well as resources on the internship application process.",
+            website: "https://appic.org/",
+          },
+          {
+            name: "Psi Chi Internship Directory",
+            description:
+              "Psi Chi is the international honor society in psychology. Its website offers a directory of internships in psychology, as well as resources on the internship application process.",
+            website: "https://www.psichi.org/page/Internships",
+          },
+        ],
+      },
+      {
+        title: "Top Companies",
+        subtitle:
+          "Leading companies in the psychology industry operating in Africa.",
+        content: [
+          {
+            name: "The South African College of Applied Psychology (SACAP)",
+            description:
+              "SACAP is a leading provider of psychology and counselling courses in South Africa. They offer a range of qualifications, including undergraduate and postgraduate degrees, as well as short courses.",
+            location: "South Africa",
+            website: "https://www.sacap.edu.za/",
+          },
+          {
+            name: "The Institute of Psychology in Addis Ababa (IPAA)",
+            description:
+              "IPAA is a private institution in Ethiopia that offers undergraduate and postgraduate degrees in psychology. They are committed to producing graduates who are capable of contributing to the development of the country's mental health sector.",
+            location: "Ethiopia",
+            website: "https://ipaaethiopia.com/",
+          },
+          {
+            name: "The African Centre for Applied Psychology (ACAP)",
+            description:
+              "ACAP is a private institution in Zimbabwe that offers undergraduate and postgraduate degrees in psychology. They are committed to producing graduates who are capable of contributing to the development of the country's mental health sector.",
+            location: "Zimbabwe",
+            website: "https://www.acap.co.zw/",
+          },
+          {
+            name: "The School of Psychology at the University of Cape Town (UCT)",
+            description:
+              "The School of Psychology at UCT is one of the leading psychology departments in South Africa. They offer undergraduate and postgraduate degrees in psychology, and their research is internationally recognized.",
+            location: "South Africa",
+            website: "https://www.psychology.uct.ac.za/",
+          },
+          {
+            name: "The Department of Psychology at the University of Ghana",
+            description:
+              "The Department of Psychology at the University of Ghana is one of the leading psychology departments in West Africa. They offer undergraduate and postgraduate degrees in psychology, and their research is internationally recognized.",
+            location: "Ghana",
+            website: "https://psychology.ug.edu.gh/",
+          },
+        ],
+      },
+      {
+        title: "External Resources",
+        courses: [
+          {
+            provider: "Coursera",
+            name: "Introduction to Psychology",
+            description:
+              "This course provides an introduction to the field of psychology, covering topics such as perception, cognition, learning, and social psychology.",
+            website: "https://www.coursera.org/learn/introduction-psych",
+          },
+          {
+            provider: "edX",
+            name: "Social Psychology",
+            description:
+              "This course covers the basics of social psychology, including how people form impressions of others, how they influence and relate to each other, and how they form groups.",
+            website: "https://www.edx.org/course/social-psychology-5",
+          },
+          {
+            provider: "MIT OpenCourseWare",
+            name: "Abnormal Psychology",
+            description:
+              "This course covers the nature and development of abnormal behavior patterns, including disorders such as schizophrenia, mood disorders, and personality disorders.",
+            website:
+              "https://ocw.mit.edu/courses/brain-and-cognitive-sciences/9-00-introduction-to-psychology-fall-2004/lecture-notes/abnormal_psych.pdf",
+          },
+          {
+            provider: "Khan Academy",
+            name: "Introduction to Psychology",
+            description:
+              "Khan Academy's Introduction to Psychology section includes videos and articles on topics such as the nervous system, learning and memory, and psychological disorders.",
+            website: "https://www.khanacademy.org/science/psychology",
+          },
+          {
+            provider: "Yale University",
+            name: "Introduction to Psychology",
+            description:
+              "This course provides an overview of the major theories and approaches to psychology, including behaviorism, cognitive psychology, and psychoanalytic theory.",
+            website: "https://oyc.yale.edu/psychology/psyc-110",
+          },
+        ],
+      },
+
+      {
+        title: "Master's Options",
+        subtitle: "What master's degree can you pursue with Psychology?",
+        content: [
+          "Master of Science in Psychology (MSc)",
+          "Master of Arts in Psychology (MA)",
+          "Master of Counseling Psychology (MCP)",
+        ],
+      },
+      {
+        title: "Easily Switchable Fields",
+        subtitle: "What other majors can align with Psychology?",
+        content: [
+          "Counseling",
+          "Social Work",
+          "Education",
+          "Criminal Justice",
+          "Marketing Research",
+          "Human Resources",
+          "Public Health",
+        ],
+      },
+      {
+        title: "Extracurriculars",
+        subtitle:
+          "Exploring exciting extracurricular opportunities and clubs available in the field of Psychology",
+        content: [
+          {
+            name: "Psi Chi",
+            description:
+              "Psi Chi is the international honor society in psychology, providing opportunities for networking, recognition, and professional development. Local chapters may offer guest speakers, research opportunities, and other events.",
+            website: "https://www.psichi.org/",
+          },
+          {
+            name: "Association for Psychological Science (APS)",
+            description:
+              "APS is a professional society for psychological scientists, providing opportunities for networking, continuing education, and advocacy. Local chapters may offer guest speakers, research opportunities, and other events.",
+            website: "https://www.psychologicalscience.org/",
+          },
+          {
+            name: "Society for Industrial and Organizational Psychology (SIOP)",
+            description:
+              "SIOP is a professional society for industrial-organizational psychologists, providing opportunities for networking, continuing education, and advocacy. Local chapters may offer guest speakers, workshops, and other events.",
+            website: "https://www.siop.org/",
+          },
+          {
+            name: "Psychology Club",
+            description:
+              "Many universities have student-run psychology clubs, which offer opportunities for networking, discussions, and events related to the field of psychology.",
+            website: "N/A",
+          },
+          {
+            name: "Active Minds",
+            description:
+              "Active Minds is a national organization focused on mental health advocacy, providing opportunities for students to raise awareness and reduce the stigma around mental health issues. Local chapters may offer guest speakers, events, and service projects.",
+            website: "https://www.activeminds.org/",
+          },
+        ],
+      },
+      {
+        title: "Experience Sharing",
+        subtitle:
+          "Exploring the wisdom of others' experiences to gain valuable insights",
+        content: "-----YOUTUBE VIDEO LINK------",
+      },
+      {
+        title: "Key Metrics",
+        subtitle: "Exploring essential metrics to gain meaningful insights.",
+        content: "-----Image------",
+      },
+      {
+        title: "FAQ",
+        subtitle: "Frequently Asked Questions about Psychology",
+        content: [
+          {
+            question: "What is psychology?",
+            answer:
+              "Psychology is the scientific study of behavior and mental processes.",
+          },
+          {
+            question: "What are some subfields of psychology?",
+            answer:
+              "Some subfields of psychology include clinical psychology, cognitive psychology, developmental psychology, social psychology, and neuropsychology.",
+          },
+          {
+            question: "What kind of jobs are available in psychology?",
+            answer:
+              "There are many different jobs available in psychology, including clinical psychologist, school psychologist, neuropsychologist, research assistant, and social worker.",
+          },
+          {
+            question: "What kind of skills do I need to work in psychology?",
+            answer:
+              "To work in psychology, you need strong analytical, communication, and critical thinking skills, as well as empathy, curiosity, and a commitment to ethical practice.",
+          },
+          {
+            question:
+              "What are some top psychology research institutions in Africa?",
+            answer:
+              "Some top psychology research institutions in Africa include the University of Cape Town's Department of Psychology, the University of the Witwatersrand's Department of Psychology, and the University of Ghana's Department of Psychology.",
+          },
+        ],
+      },
+    ],
+    image: "/images/psychology.avif",
   },
 ];
 

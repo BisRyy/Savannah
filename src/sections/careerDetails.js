@@ -70,7 +70,9 @@ export default function CareerDetails({ open, handleOpen, handleClose, data }) {
                     </Accordion>
                   </>
                 ))
-              ) : data.title === "Extracurriculars" ? (
+              ) : data.title === "Extracurriculars" ||
+                data.title === "Internships" ||
+                data.title === "Career Opportunities" ? (
                 data.content.map((item, index) => (
                   <>
                     <Typography variant="h6" sx={{ color: "primary" }}>
@@ -80,7 +82,7 @@ export default function CareerDetails({ open, handleOpen, handleClose, data }) {
                       {item.description}
                     </Typography>
                     {"  "}
-                    <Link href={item.website}>Website</Link>
+                    { item.website && <Link href={item.website}>Website</Link>}
                     <br />
                     <br />
                   </>
