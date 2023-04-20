@@ -12,6 +12,7 @@ import {
   DialogContent,
   DialogTitle,
   Input,
+  Link,
   OutlinedInput,
   TextField,
   Typography,
@@ -59,28 +60,35 @@ export default function CareerDetails({ open, handleOpen, handleClose, data }) {
                           aria-controls="panel1a-content"
                           id="panel1a-header"
                         >
-                          <Typography>
-                            {item.question}
-                          </Typography>
+                          <Typography>{item.question}</Typography>
                         </AccordionSummary>
                         <AccordionDetails>
-                          <Typography>
-                            {item.answer}
-                          </Typography>
+                          <Typography>{item.answer}</Typography>
                         </AccordionDetails>
                       </Accordion>
                     </>
                   ))
-                // : 
-                // : data.title === "Experience Sharing"
-                // ?  
-                // <iframe
-                :
-                data.content.map((item, index) => (
+                : data.title === "Extracurriculars"
+                ? data.content.map((item, index) => (
+                    <>
+                      <Typography variant="h6" sx={{ color: "primary" }}>
+                        {item.name}
+                      </Typography>
+                      <Typography variant="p" sx={{ color: "primary" }}>
+                        {item.description}
+                      </Typography>
+                      {"  "}
+                      <Link href={item.website}>Website</Link>
+                      <br />
+                      <br />
+                    </>
+                  ))
+                : data.content.map((item, index) => (
                     <>
                       <Typography variant="p" sx={{ color: "primary" }}>
                         {item}
                       </Typography>
+                      <br />
                       <br />
                     </>
                   ))}

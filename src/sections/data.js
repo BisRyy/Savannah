@@ -184,13 +184,38 @@ const bulkData = [
       {
         title: "Extracurriculars",
         subtitle:
-          "Exploring exciting extracurricular opportunities and clubs available in the field of accounting",
+          "Exploring exciting extracurricular opportunities and clubs available in the field of Computer Science in Africa",
         content: [
-          "Beta Alpha Psi: Beta Alpha Psi is an international honor society and professional organization for accounting, finance, and information systems students. Members gain access to career resources, networking events, and leadership development programs.",
-          "Accounting Club: Many universities have an accounting club that provides opportunities for students to connect with professionals, learn about accounting career paths, and gain hands-on experience through community service projects.",
-          "Volunteer Income Tax Assistance (VITA): VITA is a program sponsored by the IRS that offers free tax help to low- to moderate-income individuals and families. Accounting students can volunteer to prepare tax returns and gain practical experience while giving back to their community.",
-          "Financial Planning Association (FPA): FPA is a professional organization for financial planners that offers networking opportunities and educational resources. Accounting students interested in financial planning can benefit from membership and attend events to learn about the industry.",
-          "Institute of Management Accountants (IMA): IMA is a professional organization for management accountants that offers certification programs, conferences, and publications. Accounting students interested in management accounting can join IMA and gain access to these resources.",
+          {
+            name: "African Women in Computing (AWC)",
+            description:
+              "AWC is a non-profit organization that aims to support and empower women in computing in Africa. They offer a variety of programs, including mentorship, networking events, and professional development workshops.",
+            website: "https://africanwomenincomputing.org/",
+          },
+          {
+            name: "African Students Association for Computing (ASAC)",
+            description:
+              "ASAC is a student-led organization that aims to promote computer science education and research in Africa. They organize hackathons, coding competitions, and other events that bring together students from different African countries.",
+            website: "https://asac.org/",
+          },
+          {
+            name: "AfricaHacks",
+            description:
+              "AfricaHacks is a community of African developers, designers, and entrepreneurs who are passionate about technology and innovation. They offer a variety of programs, including hackathons, mentorship, and incubation services.",
+            website: "https://africahacks.com/",
+          },
+          {
+            name: "CodeLn",
+            description:
+              "CodeLn is a platform that connects African developers with potential employers and clients. They offer a variety of services, including job listings, freelance opportunities, and online courses.",
+            website: "https://codeln.com/",
+          },
+          {
+            name: "iSpace Foundation",
+            description:
+              "iSpace Foundation is a technology hub and co-working space based in Ghana. They offer a variety of programs, including coding bootcamps, mentorship, and networking events.",
+            website: "https://ispacegh.com/",
+          },
         ],
       },
       {

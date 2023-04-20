@@ -69,7 +69,16 @@ export default function Hero() {
 
   const options = {
     includeScore: true,
-    keys: ["major", "about"],
+    keys: [
+      {
+        name: "major",
+        weight: 0.6
+      },
+      {
+        name: "about",
+        weight: 0.3
+      }
+    ],
   };
 
   const fuse = new Fuse(data, options);
@@ -156,6 +165,11 @@ export default function Hero() {
           <StyledSearch
             value={value}
             onChange={(e) => setValue(e.target.value)}
+            onKeyPress={(event) => {
+              if (event.key === "Enter") {
+               handleSearch();
+              }
+            }}
             autoFocus
             placeholder="Search for a career path"
             endAdornment={
