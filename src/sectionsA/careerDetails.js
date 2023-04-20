@@ -72,9 +72,17 @@ export default function CareerDetails({ open, handleOpen, handleClose, data }) {
                 ))
               ) : data.title === "Extracurriculars" ||
                 data.title === "Internships" ||
-                data.title === "Career Opportunities" ? (
+                data.title === "Career Opportunities" ||
+                data.title === "Universities and Colleges" ||
+                data.title === "Top Companies" ||
+                data.title === "External Resources" ? (
                 data.content.map((item, index) => (
                   <>
+                    {item.provider && (
+                      <Typography variant="h6" sx={{ color: "primary" }}>
+                        {item.provider}
+                      </Typography>
+                    )}
                     <Typography variant="h6" sx={{ color: "primary" }}>
                       {item.name}
                     </Typography>
