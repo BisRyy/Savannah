@@ -32,7 +32,7 @@ export default function Chat({ open, handleOpen, handleClose }) {
     ]);
 
     sendMessage(
-      ` Please answer the following question with short and to the point answer. Since I know you are An AI model not capable of feelings Dont say that. What are some career options that align with my interests and skills? I'm looking for advice on paths I could pursue to make a meaningful impact and feel fulfilled in my work. ${inputValue}`
+      `${inputValue}`
     );
 
     setInputValue("");
